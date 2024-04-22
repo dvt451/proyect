@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.77779372.css",
+    "main.css": "/static/css/main.bce1eb89.css",
     "main.js": "/static/js/main.be881be6.js",
     "static/media/SF-Pro.ttf": "/static/media/SF-Pro.2f9118d7e608bf94730c.ttf",
     "static/media/Project.mp4": "/static/media/Project.c7e8500a8b871ab20e33.mp4",
@@ -23,11 +23,11 @@
     "static/media/BandicaPersonalUse-Regular.otf": "/static/media/BandicaPersonalUse-Regular.ffd06710ae1a649cdbda.otf",
     "static/media/arrow.svg": "/static/media/arrow.3ef81d15f5109f46759d724a7fda5ddc.svg",
     "index.html": "/index.html",
-    "main.77779372.css.map": "/static/css/main.77779372.css.map",
+    "main.bce1eb89.css.map": "/static/css/main.bce1eb89.css.map",
     "main.be881be6.js.map": "/static/js/main.be881be6.js.map"
   },
   "entrypoints": [
-    "static/css/main.77779372.css",
+    "static/css/main.bce1eb89.css",
     "static/js/main.be881be6.js"
   ]
 }
