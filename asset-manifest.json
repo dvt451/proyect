@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.77779372.css",
+    "main.js": "/static/js/main.be881be6.js",
+    "static/media/SF-Pro.ttf": "/static/media/SF-Pro.2f9118d7e608bf94730c.ttf",
+    "static/media/Project.mp4": "/static/media/Project.c7e8500a8b871ab20e33.mp4",
+    "static/media/SF-Pro-Text-Semibold.otf": "/static/media/SF-Pro-Text-Semibold.e16deadd9dc50f769f31.otf",
+    "static/media/SF-Pro-Text-Heavy.otf": "/static/media/SF-Pro-Text-Heavy.4f6b327cac5ca4071e79.otf",
+    "static/media/SF-Pro-Text-Regular.otf": "/static/media/SF-Pro-Text-Regular.ba21d41dbb34b2e04643.otf",
+    "static/media/HelveticaNeueBold.otf": "/static/media/HelveticaNeueBold.1baa6c20d3e22be14c0a.otf",
+    "static/media/Britanica Semi Expanded Heavy.ttf": "/static/media/Britanica Semi Expanded Heavy.fe681522f259e52c46c3.ttf",
+    "static/media/Britanica Semi Expanded Black.ttf": "/static/media/Britanica Semi Expanded Black.3ed2c3e60c9ffdf051bd.ttf",
+    "static/media/work4.webp": "/static/media/work4.90093172288c889d0acc.webp",
+    "static/media/casestudio1.webp": "/static/media/casestudio1.77891f11e13aa74d7c7b.webp",
+    "static/media/work3.webp": "/static/media/work3.842ac7da7cbb1fdeeac2.webp",
+    "static/media/work7.webp": "/static/media/work7.b0cfd5c18ff5aa008b14.webp",
+    "static/media/work2.webp": "/static/media/work2.0f648295cb4749fb2257.webp",
+    "static/media/work1.webp": "/static/media/work1.5771411090a7ecaa7c13.webp",
+    "static/media/work6.webp": "/static/media/work6.699dda0f54fd65fae50b.webp",
+    "static/media/work8.webp": "/static/media/work8.50c4f3fea96c8f2f39e5.webp",
+    "static/media/casestudio1-1.webp": "/static/media/casestudio1-1.41e3b42c477ea8f9ed8b.webp",
+    "static/media/work5.webp": "/static/media/work5.4e10d07649c94ab64247.webp",
+    "static/media/BandicaPersonalUse-Regular.otf": "/static/media/BandicaPersonalUse-Regular.ffd06710ae1a649cdbda.otf",
+    "static/media/arrow.svg": "/static/media/arrow.3ef81d15f5109f46759d724a7fda5ddc.svg",
+    "index.html": "/index.html",
+    "main.77779372.css.map": "/static/css/main.77779372.css.map",
+    "main.be881be6.js.map": "/static/js/main.be881be6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77779372.css",
+    "static/js/main.be881be6.js"
+  ]
+}
