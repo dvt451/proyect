@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3578377a.css",
+    "main.css": "/static/css/main.47bb0ba7.css",
     "main.js": "/static/js/main.2733c2cf.js",
     "static/media/001.mp4": "/static/media/001.019dd1319ee88f5584b2.mp4",
     "static/media/zume bg.mp4": "/static/media/zume bg.73b7e68ab863c8abe37e.mp4",
@@ -86,11 +86,11 @@
     "static/media/trnlogo.webp": "/static/media/trnlogo.901455293dfd5af883f7.webp",
     "static/media/arrow.svg": "/static/media/arrow.3ef81d15f5109f46759d724a7fda5ddc.svg",
     "index.html": "/index.html",
-    "main.3578377a.css.map": "/static/css/main.3578377a.css.map",
+    "main.47bb0ba7.css.map": "/static/css/main.47bb0ba7.css.map",
     "main.2733c2cf.js.map": "/static/js/main.2733c2cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.3578377a.css",
+    "static/css/main.47bb0ba7.css",
     "static/js/main.2733c2cf.js"
   ]
 }
