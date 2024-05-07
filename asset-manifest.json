@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e229b691.css",
-    "main.js": "/static/js/main.941027fc.js",
+    "main.css": "/static/css/main.3578377a.css",
+    "main.js": "/static/js/main.2733c2cf.js",
     "static/media/001.mp4": "/static/media/001.019dd1319ee88f5584b2.mp4",
     "static/media/zume bg.mp4": "/static/media/zume bg.73b7e68ab863c8abe37e.mp4",
     "static/media/SF-Pro.ttf": "/static/media/SF-Pro.2f9118d7e608bf94730c.ttf",
@@ -23,7 +23,6 @@
     "static/media/zume.webp": "/static/media/zume.794b1976b4a3491574b1.webp",
     "static/media/head.webp": "/static/media/head.807727ae134610082e31.webp",
     "static/media/mix.webp": "/static/media/mix.425d5e7a7b7bea0d5be5.webp",
-    "static/media/hetrix.webp": "/static/media/hetrix.c8945e5e71f6e23c8c8e.webp",
     "static/media/venom.webp": "/static/media/venom.910fd90557049053db87.webp",
     "static/media/image13.webp": "/static/media/image13.70062f74adde1fdff9f1.webp",
     "static/media/image7.webp": "/static/media/image7.42eb2c277898e3b3b4af.webp",
@@ -74,6 +73,7 @@
     "static/media/picture4.webp": "/static/media/picture4.797d63813d308f34d15f.webp",
     "static/media/venom2.webp": "/static/media/venom2.345442171bdfc7f9208f.webp",
     "static/media/trenfinance2.webp": "/static/media/trenfinance2.20f724765714f65771b5.webp",
+    "static/media/hetrix.webp": "/static/media/hetrix.90e2214cbb702759f969.webp",
     "static/media/picture3.webp": "/static/media/picture3.f90da7434dd767710e7c.webp",
     "static/media/hetrix2.webp": "/static/media/hetrix2.41e3b42c477ea8f9ed8b.webp",
     "static/media/work4.webp": "/static/media/work4.cb248cacb9e03c01f43d.webp",
@@ -82,15 +82,15 @@
     "static/media/BandicaPersonalUse-Regular.otf": "/static/media/BandicaPersonalUse-Regular.ffd06710ae1a649cdbda.otf",
     "static/media/sectionlogo2.webp": "/static/media/sectionlogo2.4695682fce4e869edb60.webp",
     "static/media/sectionlogo1.webp": "/static/media/sectionlogo1.50459eb76e2b42393048.webp",
-    "static/media/zume2.webp": "/static/media/zume2.e6f3d5391457806a92c9.webp",
+    "static/media/zume2.webp": "/static/media/zume2.6a85a71a114d9254402f.webp",
     "static/media/trnlogo.webp": "/static/media/trnlogo.901455293dfd5af883f7.webp",
     "static/media/arrow.svg": "/static/media/arrow.3ef81d15f5109f46759d724a7fda5ddc.svg",
     "index.html": "/index.html",
-    "main.e229b691.css.map": "/static/css/main.e229b691.css.map",
-    "main.941027fc.js.map": "/static/js/main.941027fc.js.map"
+    "main.3578377a.css.map": "/static/css/main.3578377a.css.map",
+    "main.2733c2cf.js.map": "/static/js/main.2733c2cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.e229b691.css",
-    "static/js/main.941027fc.js"
+    "static/css/main.3578377a.css",
+    "static/js/main.2733c2cf.js"
   ]
 }
