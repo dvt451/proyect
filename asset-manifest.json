@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.98bd3c7d.css",
-    "main.js": "/static/js/main.4cfbf0f8.js",
+    "main.js": "/static/js/main.818029aa.js",
     "static/media/proyecttren.mp4": "/static/media/proyecttren.b1c420cb3e8a163fc42f.mp4",
     "static/media/tren discord.mp4": "/static/media/tren discord.d29860fdf9b0a577988a.mp4",
     "static/media/001.mp4": "/static/media/001.019dd1319ee88f5584b2.mp4",
@@ -40,6 +40,7 @@
     "static/media/img3.webp": "/static/media/img3.151427a3d90b25a2427b.webp",
     "static/media/work14.webp": "/static/media/work14.d27d26e5efd0ba69326f.webp",
     "static/media/work2.webp": "/static/media/work2.4fca365300ca5daebb2c.webp",
+    "static/media/work13.webp": "/static/media/work13.cf42d4acb2f3834df997.webp",
     "static/media/work17.webp": "/static/media/work17.90f093ac8b4d6a39b68d.webp",
     "static/media/image4.webp": "/static/media/image4.b73ff8a12880f58c49be.webp",
     "static/media/image6.webp": "/static/media/image6.604ca746c513de71c8b4.webp",
@@ -67,7 +68,6 @@
     "static/media/work7.webp": "/static/media/work7.9605bae2f491d40cb1a3.webp",
     "static/media/trn5.webp": "/static/media/trn5.c9897af0760896fb9257.webp",
     "static/media/img2.webp": "/static/media/img2.ec86bfd0618ed6b096e7.webp",
-    "static/media/work13.webp": "/static/media/work13.b0cfd5c18ff5aa008b14.webp",
     "static/media/trn2.webp": "/static/media/trn2.e5d43573b7bca98d8f7b.webp",
     "static/media/picture6.webp": "/static/media/picture6.3f5d804938f189707534.webp",
     "static/media/work16.webp": "/static/media/work16.19f9c7ac5d026227e16d.webp",
@@ -88,10 +88,10 @@
     "static/media/arrow.svg": "/static/media/arrow.3ef81d15f5109f46759d724a7fda5ddc.svg",
     "index.html": "/index.html",
     "main.98bd3c7d.css.map": "/static/css/main.98bd3c7d.css.map",
-    "main.4cfbf0f8.js.map": "/static/js/main.4cfbf0f8.js.map"
+    "main.818029aa.js.map": "/static/js/main.818029aa.js.map"
   },
   "entrypoints": [
     "static/css/main.98bd3c7d.css",
-    "static/js/main.4cfbf0f8.js"
+    "static/js/main.818029aa.js"
   ]
 }
