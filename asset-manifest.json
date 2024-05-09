@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.98bd3c7d.css",
-    "main.js": "/static/js/main.818029aa.js",
+    "main.js": "/static/js/main.aaf8b21c.js",
     "static/media/proyecttren.mp4": "/static/media/proyecttren.b1c420cb3e8a163fc42f.mp4",
     "static/media/tren discord.mp4": "/static/media/tren discord.d29860fdf9b0a577988a.mp4",
     "static/media/001.mp4": "/static/media/001.019dd1319ee88f5584b2.mp4",
@@ -88,10 +88,10 @@
     "static/media/arrow.svg": "/static/media/arrow.3ef81d15f5109f46759d724a7fda5ddc.svg",
     "index.html": "/index.html",
     "main.98bd3c7d.css.map": "/static/css/main.98bd3c7d.css.map",
-    "main.818029aa.js.map": "/static/js/main.818029aa.js.map"
+    "main.aaf8b21c.js.map": "/static/js/main.aaf8b21c.js.map"
   },
   "entrypoints": [
     "static/css/main.98bd3c7d.css",
-    "static/js/main.818029aa.js"
+    "static/js/main.aaf8b21c.js"
   ]
 }
