@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.37b23cf3.css",
-    "main.js": "/static/js/main.714d6e7b.js",
+    "main.css": "/static/css/main.ec856f76.css",
+    "main.js": "/static/js/main.ee4e08ca.js",
     "static/media/proyecttren.mp4": "/static/media/proyecttren.b1c420cb3e8a163fc42f.mp4",
     "static/media/tren discord.mp4": "/static/media/tren discord.d29860fdf9b0a577988a.mp4",
     "static/media/001.mp4": "/static/media/001.019dd1319ee88f5584b2.mp4",
@@ -85,14 +85,14 @@
     "static/media/sectionlogo2.webp": "/static/media/sectionlogo2.4695682fce4e869edb60.webp",
     "static/media/sectionlogo1.webp": "/static/media/sectionlogo1.50459eb76e2b42393048.webp",
     "static/media/zume2.webp": "/static/media/zume2.6a85a71a114d9254402f.webp",
-    "static/media/trnlogo.webp": "/static/media/trnlogo.901455293dfd5af883f7.webp",
     "index.html": "/index.html",
+    "static/media/trnlogo.webp": "/static/media/trnlogo.901455293dfd5af883f7.webp",
     "static/media/arrow.svg": "/static/media/arrow.3ef81d15f5109f46759d724a7fda5ddc.svg",
-    "main.37b23cf3.css.map": "/static/css/main.37b23cf3.css.map",
-    "main.714d6e7b.js.map": "/static/js/main.714d6e7b.js.map"
+    "main.ec856f76.css.map": "/static/css/main.ec856f76.css.map",
+    "main.ee4e08ca.js.map": "/static/js/main.ee4e08ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.37b23cf3.css",
-    "static/js/main.714d6e7b.js"
+    "static/css/main.ec856f76.css",
+    "static/js/main.ee4e08ca.js"
   ]
 }
