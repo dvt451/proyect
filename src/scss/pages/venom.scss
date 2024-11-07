@@ -1,0 +1,413 @@
+.venom{
+
+
+   .usecases-head {
+      background: url('../img/usecases/venom/head.webp') center / cover no-repeat;
+   }
+   .progress-bar__filled{
+      background-image: linear-gradient(to right, #01D768,#01D768);
+   }
+   .usecases-head__text{
+      font-family: 'Poppins';
+   }
+   .usecases-text-content {
+      &__text{
+         max-width: toRem(1282);
+         span{
+            color: #01D768;
+         }
+      }
+   }
+   
+   .main-gradient-column {
+      background-color: #01D768;
+      @media (max-width:$mobile){
+          justify-content: flex-end; 
+      }
+   }
+   .gradient-column-types{
+      
+      &__text{
+         color: #fff;
+      }
+   }
+   .main-gradient-column{
+      @media (min-width:$mobile){
+         padding-bottom: toRem(130);
+      }
+      &__color-names {
+         justify-content: flex-end;
+
+      }
+   }
+   .gradient-column-types__column{
+      &:nth-child(1){
+         background-color: #FFFFFF;
+      }
+      &:nth-child(2){
+         background-color: #0F1116;
+      }
+      &:nth-child(3){
+         background-color: #0856CC;
+      }
+   }
+   .usecases-image {
+      &_3{
+         background-image: url('../img/usecases/venom/image1.webp');
+      }
+      &_2{
+         background-image: url('../img/usecases/venom/image4.webp');
+      }
+      &_6{
+         background-image: url('../img/usecases/venom/image11.webp');
+         @include adaptiveValue("height", 1054, 304,$containerWidth,393);
+      }
+      &_7{
+         background-image: url('../img/usecases/venom/image3.webp');
+         @include adaptiveValue("height", 892, 200,$containerWidth,320);
+      }
+      &_10{
+         background-image: url('../img/usecases/venom/image10.webp');
+      }
+      &_11{
+         background-image: url('../img/usecases/venom/image2.webp');
+         @include adaptiveValue("height", 1213, 452,$containerWidth,393);
+      }
+      &_12{
+         background-image: url('../img/usecases/venom/image7.webp');
+         @include adaptiveValue("height", 1005, 323,$containerWidth,393);
+      }
+   }
+   .usecases-pair__column{
+      &_9{
+         background: url('../img/usecases/venom/image8.webp') center / cover no-repeat;
+         @include adaptiveValue("height", 1005, 323,$containerWidth,393);
+      }
+      &_10{
+         @media (min-width:$mobile){
+             height: auto; 
+         }
+         background: url('../img/usecases/venom/image9.webp') center / cover no-repeat;
+      }
+      &_5{
+         background-image: url('../img/usecases/venom/image5.webp');
+      }
+      &_6{
+         background-image: url('../img/usecases/venom/image6.webp');
+      }
+      
+      
+   }
+}
+//========================================================================================================================================================
+.venom-font {
+   // .venom-font__container
+
+   background-color: #fff;
+   @include adaptiveValue("padding-block", 192, 44,$containerWidth,393);
+   @include adaptiveValue("padding-left", 125, 15,$containerWidth,393);
+   @include adaptiveValue("padding-right", 145, 15,$containerWidth,393);
+   &__container {
+      @media (max-width:$mobile){
+          padding: 0; 
+      }
+   }
+
+   // .venom-font__row
+
+   &__row {
+      border-top: toRem(1) solid rgba(57, 53, 53, 0.15);;
+      display: flex;
+      @media (max-width: em(1200)){
+          flex-direction: column; 
+      }
+   }
+
+   // .venom-font__column
+
+   &__column {
+      &:nth-child(1){
+         flex: 1 1 45%;
+      }
+      &:nth-child(2){
+         flex: 1 1 55%;
+      }
+   }
+
+   // .venom-font__labels
+
+   &__labels {
+      display: flex;
+      gap: toRem(32);
+      @media (max-width:$mobileSmall){
+          justify-content: space-between;
+          gap: toRem(20); 
+      }
+   }
+
+   // .venom-font__label
+
+   &__label {
+      color: #898989;
+      @include adaptiveValue("font-size", 24, 18,$containerWidth,393);
+      line-height: normal;
+      letter-spacing: toRem(0.36);
+      padding-top: toRem(10);
+      // .venom-font__label_title
+
+      &_title {
+      padding-top: toRem(10);
+      color: #01D768;
+         @include adaptiveValue("font-size", 24, 18,$containerWidth,393);
+         font-weight: 600;
+         line-height: normal;
+         letter-spacing: toRem(0.48);
+      }
+   }
+
+   // .venom-font__title
+
+   &__title {
+      color: #000;
+      font-family: "Nunito Sans";
+      @include adaptiveValue("font-size", 123,58,$containerWidth,393);
+      @media (max-width: em(393)){
+         font-size: toRem(40);
+      }
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: toRem(2.472);
+      @include adaptiveValue("padding-block", 25, 16,$containerWidth,393);
+   }
+
+   // .venom-font__letters
+
+   &__letters {
+      padding-top: toRem(45);
+      padding-bottom: toRem(108);
+      @include adaptiveValue("padding-top", 45, 16,$containerWidth,393);
+      @include adaptiveValue("padding-bottom", 108, 16,$containerWidth,393);
+   }
+
+   // .venom-font__letter
+
+   &__letter {
+      color: #000;
+      font-family: "Nunito Sans";
+      font-size: 46px;
+      @include adaptiveValue("font-size", 46, 25,$containerWidth,991);
+      @media (max-width:$mobile){
+         @include adaptiveValue("font-size", 30, 18,767,393);
+      }
+      @media (max-width: em(393)){
+          font-size: toRem(14); 
+      }
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: toRem(0.92);
+   }
+
+   // .venom-font__letter-upp
+
+   &__letter-upp {
+   }
+
+   // .venom-font__letter-low
+
+   &__letter-low {
+      text-transform: lowercase;
+   }
+
+   // .venom-font__numbers
+
+   &__numbers {
+      @include adaptiveValue("padding-top", 45, 16,$containerWidth,393);
+   }
+
+   // .venom-font__number
+
+   &__number {
+      color: #000;
+      font-family: "Nunito Sans";
+      font-size: 46px;
+      @include adaptiveValue("font-size", 46, 18,$containerWidth,393);
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: toRem(0.92);
+   }
+}
+//========================================================================================================================================================
+.venom-offer {
+   background-color: #fff;
+   padding-top: toRem(201);
+   padding-left: toRem(154);
+   @include adaptiveValue("padding-inline", 154, 39,$containerWidth,393);
+   @include adaptiveValue("padding-block", 201, 45,$containerWidth,393);
+   &__container{
+      @media (max-width:$mobile){
+         padding: 0; 
+      }
+   }
+   // .venom-offer__top
+
+   &__top {
+      display: flex;
+      align-items: center;
+      @include adaptiveValue("gap", 28, 6,$containerWidth,393);
+      margin-bottom: toRem(3);
+      @include adaptiveValue("margin-bottom", 12, 3,$containerWidth,393);
+   }
+
+   &__icon{
+      @include adaptiveValue("width", 84, 19,$containerWidth,393);
+      @include adaptiveValue("height", 84, 19,$containerWidth,393);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #01D768;
+      border-radius: 50%;
+      svg{
+         @include adaptiveValue("width", 58, 13,$containerWidth,393);
+         @include adaptiveValue("height", 58, 13,$containerWidth,393);
+      }
+   }
+
+   // .venom-offer__link
+
+   &__link {
+      color: #696969;
+      font-family: "Nunito Sans";
+      @include adaptiveValue("font-size", 58, 13,$containerWidth,393);
+      font-weight: 700;
+      line-height: 130%; /* 76.072px */
+   }
+
+   // .venom-offer__text
+
+   &__text {
+      color: #000;
+      font-family: "Nunito Sans";
+      @include adaptiveValue("font-size", 96, 21,$containerWidth,393);
+      font-weight: 600;
+      line-height: 130%; /* 27.929px */
+   }
+
+   // .venom-offer__labels
+
+   &__labels {
+      display: flex;
+      gap: toRem(24);
+      @include adaptiveValue("gap", 24, 5,$containerWidth,393);
+   }
+
+   // .venom-offer__label
+
+   &__label {
+      @media (max-width:$mobile){
+         border: toRem(1) solid #01D768;
+      }
+      border: toRem(2) solid #01D768;
+      padding: toRem(16) toRem(24);
+      color: #01D768;
+      @include adaptiveValue("font-size", 24, 5,$containerWidth,393);
+      @include adaptiveValue("padding-inline", 24, 5,$containerWidth,393);
+      @include adaptiveValue("padding-block", 16, 3,$containerWidth,393);
+      line-height: 150%; /* 36px */
+      border-radius: toRem(100);
+   }
+}
+//========================================================================================================================================================
+.usecases-getstarted {
+
+   background-color: #fff;
+   display: flex;
+      padding-left: toRem(15);
+      @media (max-width:$mobile){
+          flex-direction: column; 
+          padding: 0;
+      }
+
+   &__container{
+      @media (max-width:$mobile){
+         padding: 0;
+      }
+   }
+
+   // .usecases-getstarted__column
+
+   &__column {
+      flex: 1 1 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include adaptiveValue("height", 960, 300,$containerWidth,767);
+      padding-block: toRem(35);
+      &:nth-child(1){
+         @media (max-width:$mobile){
+            padding-left: toRem(15);
+         }
+      }
+      &:nth-child(2){
+         background: url('../img/usecases/venom/image12.webp') center / cover no-repeat;
+         background-position: right;
+         @include adaptiveValue("flex-basis", 960, 300,$containerWidth,767);
+         @media (max-width:$mobile){
+            @include adaptiveValue("flex-basis", 500, 300,767,393);
+         }
+      };
+   }
+
+   // .usecases-getstarted__text
+
+   &__text {
+      color: #000;
+      font-family: "Nunito Sans";
+      font-size: 65px;
+      @include adaptiveValue("font-size", 65, 30,$containerWidth,393);
+      font-style: normal;
+      font-weight: 800;
+      line-height: 130%; /* 84.5px */
+      @include adaptiveValue("margin-bottom", 40, 24,$containerWidth,393);
+      span{
+         color: #01D768;
+      }
+   }
+
+   &__content{
+      max-width: toRem(635);
+   }
+
+   // .usecases-getstarted__links
+
+   &__links {
+   }
+
+   // .usecases-getstarted__link
+
+   &__link {
+      display: inline-block;
+      border-radius: 60px;
+      @include adaptiveValue("padding-block", 31, 12,$containerWidth,393);
+      @include adaptiveValue("padding-inline", 36, 18,$containerWidth,393);
+      border: toRem(1) solid;
+      font-size: 27.16px;
+      @include adaptiveValue("font-size", 27, 14,$containerWidth,393);
+      font-weight: 500;
+      line-height: 120%; /* 32.592px */
+      // .usecases-getstarted__link_1
+
+      &_1 {
+         background-color: #01D768;
+         border-color: #01D768;
+         color: #fff;
+         @include adaptiveValue("margin-right", 24, 12,$containerWidth,393);
+      }
+
+      // .usecases-getstarted__link_2
+
+      &_2 {
+         border-color: #000;
+         color: #000;
+      }
+   }
+}

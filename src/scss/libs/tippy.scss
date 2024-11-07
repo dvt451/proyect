@@ -1,0 +1,24 @@
+
+.hint{
+	position: relative;
+   color: #fff;
+	top: calc(-20px + (-100%));
+	right: 50%;
+	transform: translateX(50%);
+	background-color: #434343;
+	padding: 7px 10px;
+	border-radius: 5px;
+	z-index: 1;
+	transition: all 0.2s ease 0s;
+	&::before{
+		content:'';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 15px;
+		height: 10px;
+		background-color: #434343;
+		clip-path: polygon(100% 0, 0 0, 50% 100%);
+	}
+}
