@@ -3,9 +3,12 @@ import Header from '../Header/Header'
 import OdometerAnimation from '../General/Ordometer'
 import { Privicylist } from '../General/Generalinfo'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function Privacy() {
+   const { t } = useTranslation();
    const [activeIndex, setActiveIndex] = useState(0);
+    const contactDescription = t('privacy-policy.section_8.description').split('[email]');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -45,7 +48,7 @@ export default function Privacy() {
                      <ul className='privacy-aside__list'>
                         {
                            Privicylist.map((item,i)=>{
-                              return <li key={i} className={activeIndex === i ? 'privacy-aside__item _active' : 'privacy-aside__item'}>{item.title}</li>
+                              return <li key={i} className={activeIndex === i ? 'privacy-aside__item _active' : 'privacy-aside__item'}>{t(item.title)}</li>
                            })
                         }
                      </ul>
@@ -53,148 +56,84 @@ export default function Privacy() {
                </aside>
                <article className='privacy__article privacy-article'>
                   <div className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title privacy-title-1">Privacy Policy</h3>
+                     <h3 className="privacy-article__title privacy-title privacy-title-1">{t('privacy-policy.texts.title')}</h3>
                      <p className="privacy-text">
-                     At Proyect, we are committed to protecting the privacy and confidentiality of our
-                     customers' personal information. This Privacy Policy outlines how we collect, use,
-                     and safeguard your information as a subscriber to our design and development
-                     services.
+                         {t('privacy-policy.texts.description')}
                      </p>
                   </div>
                   <div id={Privicylist[0].id} className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title">Information We Collect</h3>
+                     <h3 className="privacy-article__title privacy-title">{t('privacy-policy.section_1.title')}</h3>
                      <p className="privacy-text">
-                     As a subscriber to our services, we collect various types of information from you,
-including:
-<br /><br />
-Personal information such as your name, email address, postal address, phone
-number, and payment details when you sign up for a subscription, place an
-order, or communicate with us.
- Information about your usage of our services, including your preferences,
-project requirements, and interactions with our platform.
+                         {t('privacy-policy.section_1.text_1')}
+                        <br /><br />
+                         {t('privacy-policy.section_1.text_2')}
                      </p>
                   </div>
                   <div id={Privicylist[1].id} className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title">Use of Your Information</h3>
-                     <p className='privacy-text'>We use the information we collect for the following purposes:
+                     <h3 className="privacy-article__title privacy-title">{t('privacy-policy.section_2.title')}</h3>
+                     <p className='privacy-text'>{t('privacy-policy.section_2.text_1')}
                      <br /><br />
                      </p>
                         <ul className='privacy-article__list'>
-                           <li className='privacy-article__row'>To provide you with the design and development services you subscribe to,including managing your account, processing your orders, and delivering ourproducts and solutions.</li>
-                           <li className='privacy-article__row'>To personalize your experience and tailor our services to meet your specific needs and preferences.</li>
-                           <li className='privacy-article__row'>To communicate with you about your subscription, updates to our services, special offers, and promotional materials that may be of interest to you.</li>
-                           <li className='privacy-article__row'>To analyze usage patterns and trends, troubleshoot technical issues, and improve the functionality, performance, and security of our website and services.</li>
+                           <li className='privacy-article__row'>{t('privacy-policy.section_2.items.item_1')}</li>
+                           <li className='privacy-article__row'>{t('privacy-policy.section_2.items.item_2')}</li>
+                           <li className='privacy-article__row'>{t('privacy-policy.section_2.items.item_3')}</li>
+                           <li className='privacy-article__row'>{t('privacy-policy.section_2.items.item_4')}</li>
                         </ul>
                   </div>
                   <div id={Privicylist[2].id} className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title">Protection of Your Information</h3>
+                     <h3 className="privacy-article__title privacy-title">{t('privacy-policy.section_3.title')}</h3>
                      <p className="privacy-text">
-                     We take appropriate measures to protect your personal information against
-                     unauthorized access, alteration, disclosure, or destruction. We implement
-                     industry-standard security practices and technologies to ensure the
-                     confidentiality and integrity of your data.
+                         {t('privacy-policy.section_3.description')}
                      </p>
                   </div>
                   <div id={Privicylist[3].id} className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title">Disclosure of Your Information</h3>
+                     <h3 className="privacy-article__title privacy-title">{t('privacy-policy.section_4.title')}</h3>
                      <p className="privacy-text">
-                     Your privacy is important to us, and we want you to feel confident and secure
-when using our services. In order to provide you with the best possible
-experience, we may need to share your personal information with trusted thirdparty
-service providers who assist us in various aspects of our operations.
-<br /><br />
-We want to assure you that we only share your personal information with trusted
-third parties who have agreed to adhere to strict confidentiality and data
-protection standards. These third parties are contractually obligated to use your
-information solely for the purposes for which we disclose it to them and to
-implement appropriate security measures to safeguard your data.
-<br /><br />
-By entrusting your information to Proyect, you can trust that we take your privacy
-seriously and are committed to protecting it at all times. If you have any questions
-or concerns about how your information is shared, please don't hesitate to contact
-us. Your privacy and satisfaction are our top priorities.
+                         {t('privacy-policy.section_4.text_1')}
+                        <br /><br />
+                         {t('privacy-policy.section_4.text_2')}
+                        <br /><br />
+                         {t('privacy-policy.section_4.text_3')}
                      </p>
                   </div>
                   <div id={Privicylist[4].id} className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title">Cookies and Similar Technologies</h3>
+                     <h3 className="privacy-article__title privacy-title">{t('privacy-policy.section_5.title')}</h3>
                      <p className="privacy-text">
-                     By using our website, you consent to the use of cookies and similar tracking
-technologies as described in this Privacy Policy. You have the option to disable
-cookies through your browser settings or by using opt-out mechanisms provided
-by certain third-party services. However, please note that disabling cookies may
-limit your ability to access certain features and functionality of our website.
-<br /><br />
-You can manage your cookie preferences and opt-out of certain types of cookies
- by adjusting your browser settings or using the opt-out mechanisms provided by
-specific third-party services. Please refer to your browser's help documentation
-or visit the websites of individual third-party providers for more information on
-how to manage cookies.
+                        {t('privacy-policy.section_5.text_1')}
+                        <br /><br />
+                        {t('privacy-policy.section_5.text_2')}
                      </p>
                   </div>
                   <div id={Privicylist[5].id} className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title">Your Rights</h3>
+                     <h3 className="privacy-article__title privacy-title">{t('privacy-policy.section_6.title')}</h3>
                      <p className="privacy-text">
-                     You have certain rights regarding your personal information, which are designed
-to empower you and ensure the protection of your privacy. 
+                         {t('privacy-policy.section_6.text_1')}
 <br /><br />
-These rights include:
+ {t('privacy-policy.section_6.items.label')}
 <br />
-<strong>1. Right to Access:</strong> You have the right to request access to the personal
-information we hold about you. This allows you to obtain confirmation as to
-whether or not your personal data is being processed and to access specific
-details about how and why it is being processed.
+<strong>{t('privacy-policy.section_6.items.item_1.title')}</strong> {t('privacy-policy.section_6.items.item_1.description')}
 <br /><br />
-<strong>2. Right to Correction:</strong> If you believe that any of the personal information we hold
-about you is inaccurate or incomplete, you have the right to request that we
-correct or update it. We strive to ensure that the information we hold about
-you is accurate, up-to-date, and relevant for the purposes for which it was
-collected.
+<strong>{t('privacy-policy.section_6.items.item_2.title')}</strong> {t('privacy-policy.section_6.items.item_2.description')}
 <br /><br />
-<strong>3. Right to Erasure:</strong> You have the right to request the deletion or removal of your
-personal information in certain circumstances, such as when it is no longer
-necessary for the purposes for which it was collected or if you withdraw your
-consent for its processing. However, please note that this right is not absolute
-and may be subject to legal or regulatory obligations that require us to retain
-certain information.
+<strong>{t('privacy-policy.section_6.items.item_3.title')}</strong> {t('privacy-policy.section_6.items.item_3.description')}
 <br /><br />
-<strong>4. Right to Object:</strong> You have the right to object to the processing of your
-personal information in certain situations, such as when it is being processed
-for direct marketing purposes or based on legitimate interests pursued by us
-or a third party. We will carefully consider your objection and, where
-applicable, cease processing your personal information unless we have
-compelling legitimate grounds for the processing that override your interests,
-rights, and freedoms.
+<strong>{t('privacy-policy.section_6.items.item_4.title')}</strong> {t('privacy-policy.section_6.items.item_4.description')}
 <br /><br />
-<strong>5. Right to Restriction of Processing:</strong> You have the right to request the
-restriction of processing of your personal information in certain
-circumstances, such as when you contest the accuracy of the information or
-when the processing is unlawful but you oppose its erasure. This means that
-we will temporarily suspend the processing of your personal information while
-we investigate your objection or verify the accuracy of the data.
+<strong>{t('privacy-policy.section_6.items.item_5.title')}</strong> {t('privacy-policy.section_6.items.item_5.description')}
                      </p>
                      
                   </div>
                   <div id={Privicylist[6].id} className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title">Protection of Your Information</h3>
+                     <h3 className="privacy-article__title privacy-title">{t('privacy-policy.section_7.title')}</h3>
                      <p className="privacy-text">
-                     We are committed to transparency and keeping you informed about how we
-collect, use, and protect your personal information. As part of this commitment,
-we reserve the right to update or modify this Privacy Policy at any time to reflect
-changes in our practices, technology advancements, or legal requirements.
-We will notify you of any significant changes to our Privacy Policy by posting a
-prominent notice on our website or sending you a direct communication, such as
-an email. We encourage you to review this policy periodically to stay informed
-about how we are protecting your privacy and to understand any updates or
-revisions that may affect you.
+                         {t('privacy-policy.section_7.description')}
                      </p>
                   </div>
                   <div id={Privicylist[7].id} className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title">Contact Us</h3>
+                     <h3 className="privacy-article__title privacy-title">{t('privacy-policy.section_8.title')}</h3>
                      <p className="privacy-text">
-                     If you have any questions, concerns, or requests regarding this Document or our
-data practices, please contact us at <Link to={'mailto:hello@proyect.io'}>hello@proyect.io </Link>
-By subscribing to our services, you acknowledge that you have read, understood,
-and consent to the terms of this Privacy Policy.
+                         {contactDescription[0]} <Link to={`mailto:${t('privacy-policy.section_8.[email]')}`}>{t('privacy-policy.section_8.[email]')}</Link> {contactDescription[1]}
                      </p>
                   </div>
                </article>

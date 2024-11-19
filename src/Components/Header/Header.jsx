@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, rights, Privicylist } from '../General/Generalinfo'; 
+import { Menu, rights, Privicylist } from '../General/Generalinfo';
 import { IoIosArrowUp } from "react-icons/io";
 
 import Media from '../General/Media';
 import Letstalk from '../General/Letstalk';
-
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
+   const { t } = useTranslation();
    const [burgerActive, setBurgerActive] = useState(false)
    const [subMenu, setSubMenu] = useState(false)
    const [isVisible, setIsVisible] = useState(true);
@@ -87,30 +88,30 @@ export default function Header() {
          <nav className="header__menu menu">
          <ul className="menu__list">
             {
-               Menu.map((item,i)=>{
+                Menu.map((item,i)=>{
                   return i !== 5 ? <li className='menu__item' key={i}>
                      {atHome ?
-                         <button 
+                         <button
                          onClick={()=>{
-                              const element = document.querySelector('#'+item);
+                              const element = document.querySelector('#'+t(t(item)));
                               element?.scrollIntoView({
                                  behavior: 'smooth'
                               })
                          }}
-                         className='menu__link' ><span className='menu__link_text'>{item}</span>{item === 'Work' ? <span className='work-count'>{workCount}</span> : false}</button>
-                      
+                         className='menu__link' ><span className='menu__link_text'>{t(t(item))}</span>{t(t(item)) === 'Work' ? <span className='work-count'>{workCount}</span> : false}</button>
+
                      :
-                     <Link 
+                     <Link
                          to='/'
                          onClick={()=>{
                            setTimeout(() => {
-                              const element = document.querySelector('#'+item);
+                              const element = document.querySelector('#'+t(t(item)));
                               element?.scrollIntoView({
                                  behavior: 'smooth'
                               })
                            }, 1000);
                          }}
-                         className='menu__link' ><span className='menu__link_text'>{item}</span>{item === 'Work' ? <span className='work-count'>{workCount}</span> : false}</Link>
+                         className='menu__link' ><span className='menu__link_text'>{t(item)}</span>{t(item) === 'Work' ? <span className='work-count'>{workCount}</span> : false}</Link>
                      }
                      </li> : false
                     })
@@ -122,7 +123,7 @@ export default function Header() {
             <nav className="burger-body__menu menu">
                <ul className="menu__list">
                {
-                  Menu.map((item,i)=>{
+                   Menu.map((item,i)=>{
                      return i !== 5 ? <li className='menu__item' key={i}>
                         { atHome?
                            <button className='menu__link' onClick={()=>{
@@ -146,7 +147,7 @@ export default function Header() {
                               }, 1000);
                            }} to={'/#'+item}>{item}{item === 'Work' ? <span className='work-count'>{workCount}</span> : false}</Link>
                         }
-                        </li> : 
+                        </li> :
                      <li className='menu__item' key={i}>
                         <button onClick={subMenuHandle} className={subMenu ? 'menu__link _active' : 'menu__link'} to={item}>
                            <span>{item}</span>
@@ -192,7 +193,7 @@ export default function Header() {
             </nav>
             <div className="burger-body__bottom">
                <Media />
-               <div className="burger-body__rights">{rights}</div>
+               <div className="burger-body__rights">{t(rights)}</div>
             </div>
          </div>
       </div>

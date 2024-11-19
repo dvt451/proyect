@@ -1,47 +1,46 @@
 export const Menu = [
-   'Process',
-   'Services',
-   'Work',
-   'Pricing',
-   'Benefits',
-   'Privacy Policy / Terms',
-   'FAQ',
-   'Blog',
+    'homepage.footer.menu.menu_item_1',
+    'homepage.footer.menu.menu_item_2',
+    'homepage.footer.menu.menu_item_3',
+    'homepage.footer.menu.menu_item_4',
+    'homepage.footer.menu.menu_item_5',
+    'homepage.footer.menu.menu_item_6',
+    'homepage.footer.menu.menu_item_7'
 ]
 
-export const rights = 'Proyect ©2024 All Rights Reserved'
+export const rights = 'homepage.footer.texts.rights';
 
 export const Privicylist = [
    {
-title: 'Information We Collect',
+title: 'privacy-policy.section_1.title',
       id: 'privacy-sec-1',
    },
    {
-title: 'Use of Your Information',
+title: 'privacy-policy.section_2.title',
       id: 'privacy-sec-2',
    },
    {
-title: 'Protection of Your Information',
+title: 'privacy-policy.section_3.title',
       id: 'privacy-sec-3',
    },
    {
-title: 'Disclosure of Your Information',
+title: 'privacy-policy.section_4.title',
       id: 'privacy-sec-4',
    },
    {
-title: 'Cookies and Similar Technologies',
+title: 'privacy-policy.section_5.title',
       id: 'privacy-sec-5',
    },
    {
-title: 'Your Rights',
+title: 'privacy-policy.section_6.title',
       id: 'privacy-sec-6',
    },
    {
-title: 'Changes to Our Privacy Policy',
+title: 'privacy-policy.section_7.title',
       id: 'privacy-sec-7',
    },
    {
-title: 'Contact Us',
+title: 'privacy-policy.section_8.title',
       id: 'privacy-sec-8',
    },
 ]

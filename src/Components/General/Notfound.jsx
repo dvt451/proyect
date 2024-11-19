@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { HiArrowLongRight } from "react-icons/hi2";
-import arrow from '../../img/icons/arrow.svg'
-
 
 export default function Notfound() {
   return (

@@ -8,8 +8,10 @@ import img2 from '../../../img/blog/graphicdesign/img2.webp'
 import img3 from '../../../img/blog/graphicdesign/img3.webp'
 import img4 from '../../../img/blog/graphicdesign/img4.webp'
 import img5 from '../../../img/blog/graphicdesign/img5.webp'
+import { useTranslation } from 'react-i18next';
 
 export default function GraphicDesign() {
+   const { t } = useTranslation();
    const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
@@ -36,13 +38,13 @@ export default function GraphicDesign() {
     }, []);
 
     const topics = [
-      "1. AI-Powered Personalization",
-      "2. Immersive 3D and Augmented Reality (AR) Experiences",
-      "3. Neumorphism and Glassmorphism 2.0",
-      "4. Dark Mode Optimization",
-      "5. Microinteractions and Subtle Animations",
-      "6. Sustainable and Inclusive Design",
-      "7. Voice User Interfaces (VUIs)",
+      t('blog.blog-1.section_1.title'),
+      t('blog.blog-1.section_2.title'),
+      t('blog.blog-1.section_3.title'),
+      t('blog.blog-1.section_4.title'),
+      t('blog.blog-1.section_5.title'),
+      t('blog.blog-1.section_6.title'),
+      t('blog.blog-1.section_7.title'),
    ]
   return (
    <>
@@ -56,7 +58,7 @@ export default function GraphicDesign() {
             <div className="privacy__body">
                <aside className='privacy__aside privacy-aside'>
                   <div className='privacy-aside__sub-titles'>
-                     <h5 className='privacy-aside__title'>Privacy Policy</h5>
+                     <h5 className='privacy-aside__title'>{t('blog.blog-1.texts.privacy_policy')}</h5>
                      <ul className='privacy-aside__list'>
                         {
                            topics.map((item,i)=>{
@@ -68,48 +70,46 @@ export default function GraphicDesign() {
                </aside>
                <article className='privacy__article privacy-article'>
                   <div className="privacy-article__block prv-sec-ttl">
-                     <h3 className="privacy-article__title privacy-title privacy-title-1">UI/UX Design Trends 2024</h3>
+                     <h3 className="privacy-article__title privacy-title privacy-title-1">{t('blog.blog-1.texts.title')}</h3>
                      <p className="privacy-text">
-                     As the digital world continues to evolve, the importance of user-centric design is more critical than ever. In 2024, UI/UX design trends are shifting to adapt to new technologies, user expectations, and societal changes. Let’s explore the top trends shaping the design landscape this year.
+                         {t('blog.blog-1.texts.description')}
                      </p>
                   </div>
                   <div id={Privicylist[0].id} className="privacy-article__block prv-sec-ttl">
                      <h3 className="privacy-article__title privacy-title">{topics[0]}</h3>
                      <p className="privacy-text">
-                     Artificial intelligence is no longer just a backend technology; it is now an integral part of UI/UX design. In 2024, AI-powered personalization is set to revolutionize the user experience. By analyzing user behavior in real-time, AI can offer tailored content, product recommendations, and interfaces that adapt dynamically to individual needs. This level of hyper-personalization improves engagement and helps users feel connected to the product or service.
-<br /><br />
-<strong>Example:</strong><br />
-Imagine an e-commerce site where the layout, product recommendations, and even color themes adjust according to a user’s preferences, creating a seamless and intuitive experience.
+                         {t('blog.blog-1.section_1.description')}
+                    <br /><br />
+                    <strong>{t('blog.blog-1.texts.example')}</strong><br />
+                         {t('blog.blog-1.section_1.example')}
                      </p>
                   </div>
                   <div id={Privicylist[1].id} className="privacy-article__block prv-sec-ttl">
                      <h3 className="privacy-article__title privacy-title">{topics[1]}</h3>
                      <p className='privacy-text'>
-                     With the rise of metaverse platforms and more advanced AR technologies, 3D and immersive design elements are no longer niche but are becoming mainstream. In 2024, we will see websites, apps, and product displays utilizing 3D graphics and AR to offer users an interactive and engaging experience.
-<br /><br />
-Example:
-<strong>Example:</strong><br />
-Retailers are increasingly using AR for "virtual try-ons," allowing users to see how furniture looks in their living room or how a pair of shoes fits them, all through their mobile devices. This trend enhances decision-making and creates a sense of immersion.
+                        {t('blog.blog-1.section_2.description')}
+                        <br /><br />
+                        <strong>{t('blog.blog-1.texts.example')}</strong><br />
+                        {t('blog.blog-1.section_2.example')}
                      </p>
                   </div>
                   <div id={Privicylist[2].id} className="privacy-article__block prv-sec-ttl">
                      <h3 className="privacy-article__title privacy-title">{topics[2]}</h3>
                      <p className="privacy-text">
-                     While minimalism has dominated UI design for years, neumorphism and glassmorphism are making a strong comeback in 2024, now with more refined approaches. Neumorphism, which blends flat design with subtle shadows and highlights, creates interfaces that appear soft and tactile. Meanwhile, glassmorphism uses frosted glass effects, transparency, and vibrant colors to create a visually rich experience.
+                     {t('blog.blog-1.section_3.description')}
                      <br /><br />
-Example:
-<strong>Example:</strong><br />
-These design approaches are commonly used in card designs, forms, and dashboard layouts, adding depth and interactivity without overwhelming the user.
+<strong>{t('blog.blog-1.texts.example')}</strong><br />
+{t('blog.blog-1.section_3.example')}
                      </p>
                      <div className="blog__image" style={{backgroundImage: `url(${img1})`}}></div>
                   </div>
                   <div id={Privicylist[3].id} className="privacy-article__block prv-sec-ttl">
                      <h3 className="privacy-article__title privacy-title">{topics[3]}</h3>
                      <p className="privacy-text">
-                     Dark mode has been a popular option for several years, but in 2024, dark mode design is being optimized for better readability and energy efficiency. Designers are experimenting with contrast levels, colors, and fonts to create darker themes that are not just aesthetic but functional, reducing eye strain and extending battery life on mobile devices.
+                     {t('blog.blog-1.section_4.description')}
                      <br /><br />
-<strong>Example:</strong><br />
-Major platforms like YouTube, Twitter (X), and Instagram have refined their dark mode themes to provide an optimized experience across devices.
+<strong>{t('blog.blog-1.texts.example')}</strong><br />
+{t('blog.blog-1.section_4.example')}
                      </p>
                         <div className="blog__images">
                            <div className="blog__image img-size-1" style={{backgroundImage: `url(${img2})`}}></div>
@@ -119,19 +119,19 @@ Major platforms like YouTube, Twitter (X), and Instagram have refined their dark
                   <div id={Privicylist[4].id} className="privacy-article__block prv-sec-ttl">
                      <h3 className="privacy-article__title privacy-title">{topics[4]}</h3>
                      <p className="privacy-text">
-                     Microinteractions, such as button clicks, hover effects, and swipe animations, are becoming increasingly important to guide users through interfaces in an intuitive way. In 2024, expect to see more of these subtle animations that offer feedback, enhance usability, and add a touch of delight to the user experience.
+                     {t('blog.blog-1.section_5.description')}
                      <br /><br />
-<strong>Example:</strong><br />
-A small bounce or vibration when a user submits a form or clicks a button provides feedback that the action has been completed successfully.
+<strong>{t('blog.blog-1.texts.example')}</strong><br />
+{t('blog.blog-1.section_5.example')}
                      </p>
                   </div>
                   <div id={Privicylist[5].id} className="privacy-article__block prv-sec-ttl">
                      <h3 className="privacy-article__title privacy-title">{topics[5]}</h3>
                      <p className="privacy-text">
-                     Sustainability and inclusivity are no longer optional. In 2024, designers are focusing on creating eco-friendly and accessible digital products. This includes reducing the carbon footprint of websites by optimizing code, compressing images, and using energy-efficient color schemes. Inclusivity, on the other hand, involves designing for all users, including those with disabilities, by integrating tools like voice commands, screen readers, and adjustable font sizes.
+                     {t('blog.blog-1.section_6.description')}
                      <br /><br />
-<strong>Example:</strong><br />
-A website built with sustainable principles might limit its use of energy-consuming elements like videos or animations, while an inclusive design could allow users to toggle between high-contrast modes or enable text-to-speech features.
+<strong>{t('blog.blog-1.texts.example')}</strong><br />
+{t('blog.blog-1.section_6.example')}
                      </p>
                      <div className="blog__images">
                         <div className="blog__image img-size-2" style={{backgroundImage: `url(${img4})`}}></div>
@@ -141,10 +141,10 @@ A website built with sustainable principles might limit its use of energy-consum
                   <div id={Privicylist[6].id} className="privacy-article__block prv-sec-ttl">
                      <h3 className="privacy-article__title privacy-title">{topics[6]}</h3>
                      <p className="privacy-text">
-                     As voice assistants like Alexa, Siri, and Google Assistant continue to improve, voice user interfaces are becoming a critical aspect of UI/UX design in 2024. VUIs allow users to navigate applications and perform tasks using voice commands, offering a hands-free and seamless experience.
+                     {t('blog.blog-1.section_7.description')}
                      <br /><br />
-<strong>Example:</strong><br />
-Voice interactions are expanding beyond smart home devices into apps, where users can initiate commands like “book a flight” or “send a message” through voice alone, reducing the need for traditional touch-based navigation.
+<strong>{t('blog.blog-1.texts.example')}</strong><br />
+{t('blog.blog-1.section_7.example')}
                      </p>
                   </div>
                </article>

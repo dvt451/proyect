@@ -2639,7 +2639,7 @@ body {
     display: none;
   }
 }
-.head mark, .head a {
+.head mark, .head a, .head .description-btn {
   color: var(--colYellow);
   background-color: transparent;
 }
@@ -4419,12 +4419,14 @@ body {
 @media (min-width: 117.5em) {
   .letstalk__title {
     margin-bottom: 3.625rem;
+    max-width: 800px;
   }
 }
 @media (min-width: 24.5625em) and (max-width: 117.5em) {
   @supports (margin-bottom: clamp( 2rem , 1.5705279085rem  +  1.7484868863vw , 3.625rem )) {
     .letstalk__title {
       margin-bottom: clamp( 2rem , 1.5705279085rem  +  1.7484868863vw , 3.625rem );
+      max-width: 600px;
     }
   }
   @supports not (margin-bottom: clamp( 2rem , 1.5705279085rem  +  1.7484868863vw , 3.625rem )) {
@@ -4441,6 +4443,7 @@ body {
 @media (max-width: 61.99875em) {
   .letstalk__title {
     color: #111;
+    max-width: 530px;
   }
 }
 .letstalk__title.layer-active {

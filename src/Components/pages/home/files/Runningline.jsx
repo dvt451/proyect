@@ -1,38 +1,7 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import {Swiper,SwiperSlide} from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
+import React from 'react';
 
 const InfiniteRunningImages = ({ images, directionRight }) => {
-   const breakpoints = {
-      320: {
-         slidesPerView: 1.2,
-      },
-      479: {
-         slidesPerView: 1.6,
-      },
-      600: {
-         slidesPerView: 2,
-      },
-      768: {
-         slidesPerView: 2.5,
-      },
-      992: {
-         slidesPerView: 3,
-      },
-      1200: {
-         slidesPerView: 3.2,
-      },
-      1500: {
-         slidesPerView: 3.7,
-      },
-      1700: {
-         slidesPerView: 4.2,
-      },
-   }
-   const emptyArray = Array.from({ length: 3 });
   return (
-   // style={{width: images.length * 484+'px',}}
    <>
     <div className='works__wrapper' >
          {images.map((item,i)=>{

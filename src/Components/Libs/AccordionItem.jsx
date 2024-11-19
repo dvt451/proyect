@@ -1,8 +1,7 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 export const AccordionItem = (props) => {
-  const contentEl = useRef();
-  const { handleToggle, active, activated, faq, freemode } = props;
+  const { handleToggle, active, activated, faq } = props;
   const { title, text, id  } = faq;
 
   useEffect(() => {

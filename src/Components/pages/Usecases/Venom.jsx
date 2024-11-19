@@ -5,8 +5,14 @@ import OdometerAnimation from '../../General/Ordometer'
 import Progressbar from '../home/files/Progressbar'
 import videoLinkColors from '../../../videos/colors-venom.webm'
 import IconLines from '../../../videos/venom-icon-lines-6.webm'
+import { useTranslation } from 'react-i18next';
 
 export default function Venom() {
+  const { t } = useTranslation();
+
+   const text_1 = t('use-case.venom.text_1').split('[text_1_colored_text]');
+   const text_2 = t('use-case.venom.text_2').split('[text_2_colored_text]');
+   const text_5 = t('use-case.venom.text_5').split('[text_5_colored_text]');
 
   return (
    <>
@@ -23,7 +29,7 @@ export default function Venom() {
                         <path d="M112.613 1.23138C108.831 0.637657 104.955 0.975715 101.343 2.21463C97.7313 3.45381 94.499 5.55389 91.9441 8.3216C87.0678 13.6194 85.5505 20.5169 86.7216 27.4284C87.7823 33.6615 89.1892 39.9877 89.5061 45.9926C89.9489 55.0367 88.529 64.0756 85.3296 72.5821C82.4347 80.2792 78.3099 86.2482 69.4707 87.569C68.8153 87.6692 66.4287 87.7406 65.7509 87.7762C65.0734 87.8118 62.93 87.6762 62.2669 87.5763C53.428 86.2553 49.2662 80.2863 46.3786 72.5391C43.1793 64.0326 41.7594 54.9937 42.2022 45.9496C42.519 39.9664 43.9259 33.6331 44.9867 27.3857C46.1578 20.4739 44.6404 13.5767 39.7642 8.27862C37.2011 5.5131 33.9608 3.41768 30.3421 2.18589C26.7232 0.954369 22.8427 0.62616 19.0586 1.23138C7.72247 3.02378 0.172423 12.7769 0.10613 23.0087C0.0744945 26.951 1.17912 30.8235 3.29558 34.1901C6.82384 39.8306 12.6134 43.9435 17.6664 48.2131C21.0106 51.0692 26.7928 59.1731 29.6287 67.9552C31.3449 73.2747 32.7445 78.6655 34.1291 84.1062C36.0737 91.6889 38.7475 108.439 40.508 116.044C44.0217 131.266 54.7759 134.715 65.5521 135.065H65.935C76.7115 134.715 87.6425 131.259 91.1559 116.037C92.909 108.432 95.5755 91.6747 97.5348 84.0991C98.927 78.6869 100.319 73.2675 102.035 67.9481C104.871 59.166 110.654 51.0334 113.998 48.206C119.051 43.9218 124.833 39.8235 128.368 34.183C130.485 30.8164 131.589 26.9439 131.558 23.0016C131.499 12.7484 123.978 2.98792 112.613 1.23138Z" fill="white"/>
                      </svg>
                   </i>
-                  <div className="usecases-head__text">Venom</div>
+                  <div className="usecases-head__text">{t('use-case.venom.title')}</div>
                </h1>
             </div>
          </div>
@@ -45,7 +51,7 @@ export default function Venom() {
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-               Your gateway to Web3 starts with Venom, <span>an innovative Layer 1 blockchain</span> built on the Threaded Virtual Machine (TVM).
+               {text_1[0]} {t('use-case.venom.[text_1_colored_text]') && <span>{t('use-case.venom.[text_1_colored_text]')}</span>} {text_1[1]}
             </p>
          </div>
       </section>
@@ -68,19 +74,19 @@ export default function Venom() {
             <div className='venom-font__row'>
                <div className="venom-font__column">
                   <div className="venom-font__labels">
-                     <div className="venom-font__label venom-font__label_title">Weights</div>
-                     <div className="venom-font__label">Regular</div>
-                     <div className="venom-font__label">Semibold</div>
+                     <div className="venom-font__label venom-font__label_title">{t('use-case.venom.weights')}</div>
+                     <div className="venom-font__label">{t('use-case.venom.regular')}</div>
+                     <div className="venom-font__label">{t('use-case.venom.semibold')}</div>
                   </div>
                </div>
                <div className="venom-font__column">
-                  <div className="venom-font__title">Nunito Sans</div>
+                  <div className="venom-font__title">{t('use-case.venom.nunito_sans')}</div>
                </div>
             </div>
             <div className='venom-font__row'>
                <div className="venom-font__column">
                   <div className="venom-font__labels">
-                     <div className="venom-font__label venom-font__label_title">Letters</div>
+                     <div className="venom-font__label venom-font__label_title">{t('use-case.venom.letters')}</div>
                   </div>
                </div>
                <div className="venom-font__column">
@@ -93,7 +99,7 @@ export default function Venom() {
             <div className='venom-font__row'>
                <div className="venom-font__column">
                   <div className="venom-font__labels">
-                     <div className="venom-font__label venom-font__label_title">Numbers</div>
+                     <div className="venom-font__label venom-font__label_title">{t('use-case.venom.numbers')}</div>
                   </div>
                </div>
                <div className="venom-font__column">
@@ -119,7 +125,7 @@ export default function Venom() {
       <section className='usecases__text-content usecases-text-content dir-r'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            Crafted a cutting-edge website and <span>distinctive branding</span> to reflect their innovative technology and forward-thinking ethos.
+               {text_2[0]} {t('use-case.venom.[text_2_colored_text]') && <span>{t('use-case.venom.[text_2_colored_text]')}</span>} {text_2[1]}
             </p>
          </div>
       </section>
@@ -139,13 +145,13 @@ export default function Venom() {
                </i>
                <a className='venom-offer__link' href="#">venom.foundation</a>
             </div>
-            <p className="venom-offer__text">Resourceful teams with passion in their hearts who strive to implement new ideas into life</p>
+            <p className="venom-offer__text">{t('use-case.venom.text_3')}</p>
             <div className="venom-offer__labels">
-               <div className="venom-offer__label">Secure</div>
-               <div className="venom-offer__label">Blockchain</div>
-               <div className="venom-offer__label">Scalable</div>
-               <div className="venom-offer__label">Decentralization</div>
-               <div className="venom-offer__label">Network</div>
+               <div className="venom-offer__label">{t('use-case.venom.secure')}</div>
+               <div className="venom-offer__label">{t('use-case.venom.blockchain')}</div>
+               <div className="venom-offer__label">{t('use-case.venom.scalable')}</div>
+               <div className="venom-offer__label">{t('use-case.venom.decentralization')}</div>
+               <div className="venom-offer__label">{t('use-case.venom.network')}</div>
             </div>
          </div>
       </section>
@@ -164,7 +170,7 @@ export default function Venom() {
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            Creating engaging visuals and captivating videos specifically designed to showcase Venom across many online channels.
+               {t('use-case.venom.text_4')}
             </p>
          </div>
       </section>
@@ -183,10 +189,10 @@ export default function Venom() {
          <div className='usecases-getstarted'>
             <div className="usecases-getstarted__column">
                <div className='usecases-getstarted__content'>
-                  <p className="usecases-getstarted__text">Made for Decentralisation Designed for <span>Mass Adoption.</span></p>
+                  <p className="usecases-getstarted__text">{text_5[0]} {t('use-case.venom.[text_5_colored_text]') && <span>{t('use-case.venom.[text_5_colored_text]')}</span>} {text_5[1]}</p>
                   <div className="usecases-getstarted__links">
-                     <a href="" className="usecases-getstarted__link usecases-getstarted__link_1">Get Started</a>
-                     <a href="" className="usecases-getstarted__link usecases-getstarted__link_2">Start Building</a>
+                     <a href="" className="usecases-getstarted__link usecases-getstarted__link_1">{t('use-case.venom.get_started')}</a>
+                     <a href="" className="usecases-getstarted__link usecases-getstarted__link_2">{t('use-case.venom.start_building')}</a>
                   </div>
                </div>
             </div>

@@ -5,7 +5,6 @@ import { useLocation } from 'react-router-dom';
 export default function Ordometer() {
   const counter3 = useRef(null);
   const loadinScreenRef = useRef(null)
-  const tl = gsap.timeline();
 
   const location = useLocation().pathname
 

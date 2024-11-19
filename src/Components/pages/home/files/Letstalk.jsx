@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { IoMdArrowForward } from "react-icons/io";
 import WordShuffler from './WordShuffler';
+import { useTranslation } from 'react-i18next';
 
 export default function Letstalk() {
-
+   const { t } = useTranslation();
    const [ripplePosition, setRipplePosition] = useState({ x: 0, y: 0 });
    const [buttonActive, setButtonActive] = useState(false);
  
@@ -197,8 +197,8 @@ export default function Letstalk() {
                borderInline: buttonActive ? 'none' : '0.0625rem solid #333'
             }}
          >
-            <p className={!buttonActive ? "letstalk__subtitle" : "letstalk__subtitle layer-active"}>Curious For More?</p>
-            <div className={!buttonActive ? "letstalk__title" : "letstalk__title layer-active"}>Designing The<br />Future Starts Here</div>
+            <p className={!buttonActive ? "letstalk__subtitle" : "letstalk__subtitle layer-active"}>{t('homepage.lets-talk.subtitle')}</p>
+            <div className={!buttonActive ? "letstalk__title" : "letstalk__title layer-active"}>{t('homepage.lets-talk.title')}</div>
             <Link
             onMouseMove={handleMouseMove}
             onMouseEnter={handleHover}
@@ -209,7 +209,7 @@ export default function Letstalk() {
                <span className='letstalk__link_text'>
                <WordShuffler
                buttonActive={buttonActive}
-         text={shuffling ? "Let's talk" : "Let's talk "}
+         text={shuffling ? t('homepage.lets-talk.button') : t('homepage.lets-talk.button') + " "}
         textColor="#000"
         timeOffset={1}
         mixCapital={true}
@@ -224,7 +224,7 @@ export default function Letstalk() {
             ></span>
 
             </Link>
-            <p className={!buttonActive ? "letstalk__text" : "letstalk__text layer-active"}>The strategic design / development partner for businesses wanting to scale to higher levels. Plan a call with us to start.</p>
+            <p className={!buttonActive ? "letstalk__text" : "letstalk__text layer-active"}>{t('homepage.lets-talk.description')}</p>
          </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ i18n
         },
         backend: {
             // Adjust the loadPath to point to a single API endpoint for all translations
-            loadPath: 'http://proyect-admin.local/api/translations',
+            loadPath: process.env.REACT_APP_API_URL + '/translations',
         },
         keySeparator: '.', // Use dot notation for nested keys
     });

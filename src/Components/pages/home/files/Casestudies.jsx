@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 
 import asidepic1 from '../../../../img/casestudio/hetrix2.webp'
@@ -13,16 +13,11 @@ import mainPicture4 from '../../../../img/casestudio/trenfinance.webp'
 
 import { HiArrowLongRight } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel } from 'swiper/modules';
 import TitleComponent from '../../../General/TitleAnimation/TitleComponent';
-
+import { useTranslation } from 'react-i18next';
 
 export default function Casestudies(props) {
-   const linkHandler = ()=>{
-      props.sishvr(false)
-      window.scrollTo(0, 0);
-   }
+   const { t } = useTranslation();
    const [scrollPosition, setScrollPosition] = useState(0);
    const [transformed, setTransformed] = useState(0); // Changed to a number to represent the transformation level
    const blocks = [1, 2, 3, 4]; // Array of block numbers
@@ -30,33 +25,33 @@ export default function Casestudies(props) {
    const casestudioList = [
     {
        mainPicture: mainPicture1,
-       title: 'Hetrix',
-       list: ['Branding','Corporate Identity'],
+       title: t('homepage.case-studies.item_1.title'),
+       list: [t('homepage.case-studies.item_1.work_type.item_1'),t('homepage.case-studies.item_1.work_type.item_1')],
        link: 'hetrix',
-       asideText: "We've elevated Hetrix's presence in the gaming industry, capturing their essence and vision in every design detail. Click for more info.",
+       asideText: t('homepage.case-studies.item_1.description'),
        asidePicture: asidepic1,
     },
     {
        mainPicture: mainPicture2,
-       title: 'Venom Foundation',
-       list: ['Web Design','Brand Guidelines'],
+       title: t('homepage.case-studies.item_2.title'),
+       list: [t('homepage.case-studies.item_2.work_type.item_1'),t('homepage.case-studies.item_2.work_type.item_1')],
        link: 'venom',
-       asideText: "Venom, a layer one blockchain, where we crafted a cutting-edge website and distinctive branding to reflect their innovative technology and forward-thinking ethos. Click for more info.",
+       asideText: t('homepage.case-studies.item_2.description'),
        asidePicture: asidepic2,
     },
     {
        mainPicture: mainPicture3,
-       title: 'Zume',
-       list: ['Corporate Identity','Templates'],
+       title: t('homepage.case-studies.item_3.title'),
+       list: [t('homepage.case-studies.item_3.work_type.item_1'),t('homepage.case-studies.item_3.work_type.item_1')],
        link: 'zume',
-       asideText: "Our collaborative efforts have propelled Zume towards achieving their marketing goals and standing out in the competitive industry. Click for more info.",
+       asideText: t('homepage.case-studies.item_3.description'),
        asidePicture: asidepic3,
     },      {
        mainPicture: mainPicture4,
-       title: 'TrenFinance',
-       list: ['Branding','Platform UI'],
+       title: t('homepage.case-studies.item_4.title'),
+       list: [t('homepage.case-studies.item_4.work_type.item_1'),t('homepage.case-studies.item_4.work_type.item_1')],
        link: 'trenfinance',
-       asideText: "As their trusted branding agency, we've meticulously crafted a compelling vision for Tren Finance, positioning them as leaders in the rapidly evolving DeFi landscape. From conceptualizing their brand identity to designing an intuitive platform UI, we've done it all.",
+       asideText: t('homepage.case-studies.item_4.description'),
        asidePicture: asidepic4,
     },
  ]
@@ -121,9 +116,9 @@ export default function Casestudies(props) {
         <div className="blocks-outer-wrapper casestudies__section-block section-block">
          
         <div className="section-block__head">
-         <TitleComponent text={"Case Studies"}/>
+         <TitleComponent text={t('homepage.case-studies.texts.title')}/>
                <Link to={'https://cal.com/proyect/discovery'} target="_blank" className="button casestudies__button">
-                  <div className="button__text">Book a Call</div>
+                  <div className="button__text">{t('homepage.case-studies.texts.book_a_call')}</div>
                   <i className="button__icon">
                      <FaArrowRight />
                   </i>
@@ -150,7 +145,7 @@ export default function Casestudies(props) {
                                  }
                               </div>
                               <Link to={item.link} className='link'>
-                                 <span className="link__text">View work</span>
+                                 <span className="link__text">{t('homepage.case-studies.texts.view_work')}</span>
                                  <HiArrowLongRight />
                               </Link>
                            </div>
@@ -185,9 +180,9 @@ export default function Casestudies(props) {
         <div className="casestudies__section-block section-block">
          
         <div className="section-block__head">
-               <TitleComponent text={"Case Studies"}/>
+               <TitleComponent text={t('homepage.case-studies.texts.title')}/>
                <button className="button casestudies__button">
-                  <div className="button__text">Book a Call</div>
+                  <div className="button__text">{t('homepage.case-studies.texts.book_a_call')}</div>
                   <i className="button__icon">
                      <FaArrowRight />
                   </i>

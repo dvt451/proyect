@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Header from './Header'
-import mixImage from '../../../img/usecases/trenfinance/mix.webp'
 import { Link } from 'react-router-dom'
 import OdometerAnimation from '../../General/Ordometer'
 import Progressbar from '../home/files/Progressbar'
@@ -9,41 +8,47 @@ import videoLink2 from '../../../videos/001.mp4'
 import videoLink3 from '../../../videos/subtract.mp4'
 import videoLink4 from '../../../videos/nfthq.mp4'
 import videoLink5 from '../../../videos/proyect-use-case-tren-bottom-video.webm'
-
+import { useTranslation } from 'react-i18next';
 
 export default function TrenFinance() {
+   const { t } = useTranslation();
    const scrollTop = ()=>{
       window.scrollTo(0, 0);
    }
+
+    const text_1 = t('use-case.tren.texts.text_1').split('[text_1_colored_text]');
+    const text_2 = t('use-case.tren.texts.text_2').split('[text_2_colored_text]');
+    const text_3 = t('use-case.tren.texts.text_3').split('[text_3_colored_text]');
+
    const gradients = {
       mainBlock: {
-         text: 'Dark Green',
+         text: t('use-case.tren.colors.dark_green'),
          gradient: 'linear-gradient(268deg, #67DAB1 -123.02%, #102522 81.82%), #102522',
       },
       mainLightColor:{
-         text: 'Turquoise',
+         text: t('use-case.tren.colors.turquoise'),
          color: '#67DAB1',
       },
       mainDarkColor: {
-         text: 'Green',
+         text: t('use-case.tren.colors.green'),
          color: '#102522',
       },
       colorShapesOpacity: [80,70,60,50,20,10,0],
       colorTypes: [
          {
-            text: 'Light Green',
+            text: t('use-case.tren.colors.light_green'),
             color: '#C6E0DC',
          },
          {
-            text: 'Gray',
+            text: t('use-case.tren.colors.gray'),
             color: '#D0D4D4',
          },
          {
-            text: 'White',
+            text: t('use-case.tren.colors.white'),
             color: '#fff',
          },
          {
-            text: 'Black',
+            text: t('use-case.tren.colors.black'),
             color: '#0B0D0E',
          },
       ]
@@ -76,7 +81,7 @@ export default function TrenFinance() {
          <div className='usecases-text-content__container'>
             {/* <h2 className="usecases-text-content__title">Title will come here</h2> */}
             <p className="usecases-text-content__text">
-            Tren Finance, <span>A CDP protocol</span> that unlocks the liquidity for the long tail of crypto.
+                {text_1[0]} {t('use-case.tren.texts.[text_1_colored_text]') && <span>{t('use-case.tren.texts.[text_1_colored_text]')}</span>} {text_1[1]}
             </p>
          </div>
       </section>
@@ -172,9 +177,9 @@ export default function TrenFinance() {
                   <li className="trenfinance-font__item"></li>
                </ul>
                <div className="trenfinance-font__headings">
-                  <div className="trenfinance-font__heading trenfinance-font__heading_1">Heading 64-80 px</div>
-                  <div className="trenfinance-font__heading trenfinance-font__heading_2">Heading 32-56 px</div>
-                  <div className="trenfinance-font__heading trenfinance-font__heading_3">Body 16-24 px</div>
+                  <div className="trenfinance-font__heading trenfinance-font__heading_1">{t('use-case.tren.texts.heading')} 64-80 {t('use-case.tren.texts.px')}</div>
+                  <div className="trenfinance-font__heading trenfinance-font__heading_2">{t('use-case.tren.texts.heading')} 32-56 {t('use-case.tren.texts.px')}</div>
+                  <div className="trenfinance-font__heading trenfinance-font__heading_3">{t('use-case.tren.texts.body')} 16-24 {t('use-case.tren.texts.px')}</div>
                </div>
             </div>
          </div>
@@ -221,7 +226,7 @@ export default function TrenFinance() {
       <section className='usecases__text-content usecases-text-content dir-r'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            As web3 continues to redefine innovation, our commitment to <span>creating interactive experiences</span> brings Tren Finance towards a deeper connection with the audience.
+                {text_2[0]} {t('use-case.tren.texts.[text_2_colored_text]') && <span>{t('use-case.tren.texts.[text_2_colored_text]')}</span>} {text_2[1]}
             </p>
          </div>
       </section>
@@ -253,7 +258,7 @@ export default function TrenFinance() {
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            In addition to <span>crafting a captivating brand identity</span>, we prioritize platform UI, navigating its inherent complexities with precision and expertise.
+                {text_3[0]} {t('use-case.tren.texts.[text_3_colored_text]') && <span>{t('use-case.tren.texts.[text_3_colored_text]')}</span>} {text_3[1]}
             </p>
          </div>
       </section>

@@ -2,69 +2,71 @@ import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import TitleComponent from '../../../General/TitleAnimation/TitleComponent';
+import { useTranslation } from 'react-i18next';
 
 export default function Services() {
+   const { t } = useTranslation();
 
    const servicesList = [
       {
-         title: 'Visual Design',
+         title: t('homepage.services.visual_design.title'),
          list: [
-            'Pitchdecks',
-            'Social Media Posts',
-            'Brochures / Magazines',
-            'Product Mockups',
-            'Advertisements',
-            'Product Packaging / Invitations',
-            'Banners',
-            'Whitepapers / Documents',
+            t('homepage.services.visual_design.list.item_1'),
+            t('homepage.services.visual_design.list.item_2'),
+            t('homepage.services.visual_design.list.item_3'),
+            t('homepage.services.visual_design.list.item_4'),
+            t('homepage.services.visual_design.list.item_5'),
+            t('homepage.services.visual_design.list.item_6'),
+            t('homepage.services.visual_design.list.item_7'),
+            t('homepage.services.visual_design.list.item_8')
          ]
       },
       {
-         title: 'Branding',
+         title: t('homepage.services.branding.title'),
          list: [
-            'Logo Design',
-            'Corporate Identity',
-            'Branding / Brandbooks',
-            'Brand Guidelines',
-            'Business Cards',
-            'Merchandise',
-            'Typography',
+            t('homepage.services.branding.list.item_1'),
+            t('homepage.services.branding.list.item_2'),
+            t('homepage.services.branding.list.item_3'),
+            t('homepage.services.branding.list.item_4'),
+            t('homepage.services.branding.list.item_5'),
+            t('homepage.services.branding.list.item_6'),
+            t('homepage.services.branding.list.item_7')
          ]
       },
       {
-         title: 'Web Design',
+         title: t('homepage.services.web_design.title'),
          list: [
-            'Website UI',
-            'Mobile Applications',
-            'Design Systems',
-            'Wireframes',
+            t('homepage.services.web_design.list.item_1'),
+            t('homepage.services.web_design.list.item_2'),
+            t('homepage.services.web_design.list.item_3'),
+            t('homepage.services.web_design.list.item_4')
          ]
       },
       {
-         title: 'Animation',
+         title: t('homepage.services.animation.title'),
          list: [
-            '2D Animation',
-            '3D Animation',
-            'Product Videos',
-            'Promotion Videos',
+            t('homepage.services.animation.list.item_1'),
+            t('homepage.services.animation.list.item_2'),
+            t('homepage.services.animation.list.item_3'),
+            t('homepage.services.animation.list.item_4')
          ]
       },
       {
-         title: '3D Design',
+         title: t('homepage.services.3d_design.title'),
          list: [
-            'NFT Design',
-            'Logo Animation',
-            'Graphics Support',
-            '3D Modelling',
+            t('homepage.services.3d_design.list.item_1'),
+            t('homepage.services.3d_design.list.item_2'),
+            t('homepage.services.3d_design.list.item_3'),
+            t('homepage.services.3d_design.list.item_4')
          ]
       },
       {
-         title: 'Video Editing',
+         title: t('homepage.services.video_editing.title'),
          list: [
-            'Video Editing',
-            'Story Boards',
-            'Intro / Outros',
-            'Templates',
+            t('homepage.services.video_editing.list.item_1'),
+            t('homepage.services.video_editing.list.item_2'),
+            t('homepage.services.video_editing.list.item_3'),
+            t('homepage.services.video_editing.list.item_4')
          ]
       },
    ]
@@ -75,9 +77,9 @@ export default function Services() {
       <div className="services__container">
       <div className="services__section-block section-block">
             <div className="section-block__head">
-               <TitleComponent text={"Services"}/>
+               <TitleComponent text={t('homepage.services.texts.title')}/>
                <Link to={'https://cal.com/proyect/discovery'} target="_blank" className="button services__button">
-                  <div className="button__text">Explore</div>
+                  <div className="button__text">{t('homepage.services.texts.button')}</div>
                   <i className="button__icon">
                      <FaArrowRight />
                   </i>
@@ -106,7 +108,7 @@ export default function Services() {
             </div>
             
             <Link to={bookCalLink} target='_blank' className="button section-block__button">
-               <div className="button__text">Book a Call</div>
+               <div className="button__text">{t('homepage.services.texts.book_a_call')}</div>
             </Link>
          </div>
       </div>

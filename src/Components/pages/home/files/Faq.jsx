@@ -1,38 +1,39 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 
 import { AccordionItem } from '../../../Libs/AccordionItem';
 import { Link } from 'react-router-dom';
 import TitleComponent from '../../../General/TitleAnimation/TitleComponent';
+import { useTranslation } from 'react-i18next';
 
 export default function Faq() {
- 
+   const { t } = useTranslation();
    const faqItems = [
-      {
-         id: 1,
-         title: 'How fast will my requests be delivered?',
-         text: "You can typically expect to receive your tasks within 24 hours. However, please keep in mind that larger tasks demand additional time and attention, the delivery timeframe might extend. Our commitment is to ensure each task receives the necessary dedication for top-notch results."
-      },
-      {
-         id: 2,
-         title: 'Who will I be working with?',
-         text: "You’’ll be in contact with a dedicated project and account manager, ensuring seamless communication for all your design requirements. Weekly progress reports will be sent to track the advancement of your needs."
-      },
-      {
-         id: 3,
-         title: 'What languages do you code in?',
-         text: "We code using a diverse range of languages tailored to meet the requirements of your project. Our expertise includes JavaScript, encompassing Vue.js, React.js, Node.js, React Native, and Angular.js, as well as PHP, with proficiency in frameworks such as Laravel and Yii2."
-      },
-      {
-         id: 4,
-         title: 'Why would I not just hire a freelancer?',
-         text: "Investing in a full-time senior-level designer or developer can be a significant financial commitment. On average, the annual cost of hiring a senior professional can exceed $87,000, and that's not including benefits and the challenge of finding top talent. With our subscription, you not only get access to visual design services but also 2D/3D animation, UI/UX design, and video editing."
-      },
-      {
-         id: 5,
-         title: "What if I don't have enough requests for the month?",
-         text: "No worries, If you find yourself running low on designs for the month, just hit pause on your subscription. That way, you can save those design requests for whenever your creative needs are booming again. This operates on a daily basis. If you have 10 days remaining on your subscription, you can utilize them at your convenience in the future."
-      },
+    {
+        id: 1,
+        title: t('homepage.faq.items.item_1.question'),
+        text: t('homepage.faq.items.item_1.answer')
+    },
+    {
+        id: 2,
+        title: t('homepage.faq.items.item_2.question'),
+        text: t('homepage.faq.items.item_2.answer')
+    },
+    {
+        id: 3,
+        title: t('homepage.faq.items.item_3.question'),
+        text: t('homepage.faq.items.item_3.answer')
+    },
+    {
+        id: 4,
+        title: t('homepage.faq.items.item_4.question'),
+        text: t('homepage.faq.items.item_4.answer')
+    },
+    {
+        id: 5,
+        title: t('homepage.faq.items.item_5.question'),
+        text: t('homepage.faq.items.item_5.answer')
+    },
    ]
    const [activeItems, setActiveItems] = useState([]);
   const activatedItem = 1;
@@ -60,9 +61,9 @@ export default function Faq() {
       <div className="faq__container">
          <div className="faq__block">
             <div className="faq__column faq__head">
-               <TitleComponent text={"FAQ"}/>
+               <TitleComponent text={t('homepage.faq.texts.title')}/>
                <Link to={'https://cal.com/proyect/discovery'} target="_blank" className="button section-block__title-button">
-                  <div className="button__text">Book a Call</div>
+                  <div className="button__text">{t('homepage.faq.texts.book_a_call')}</div>
                   <i className="button__icon">
                      <FaArrowRight />
                   </i>

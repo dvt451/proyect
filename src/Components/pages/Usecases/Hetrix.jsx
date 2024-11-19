@@ -6,11 +6,17 @@ import Progressbar from '../home/files/Progressbar';
 import videoLink from '../../../videos/hetrix.mp4'
 import videoLinkColors from '../../../videos/colors-hetrix.webm'
 import watchVideo from '../../../videos/hetrix-watch.webm'
-
+import { useTranslation } from 'react-i18next';
 export default function Hetrix() {
+   const { t } = useTranslation();
    const scrollTop = ()=>{
       window.scrollTo(0, 0);
    }
+
+   const text_1 = t('use-case.hetrix.text_1').split('[text_1_colored_text]');
+   const text_2 = t('use-case.hetrix.text_2').split('[text_2_colored_text]');
+   const text_3 = t('use-case.hetrix.text_3').split('[text_3_colored_text]');
+
   return (
     <>
    <Header />
@@ -26,7 +32,7 @@ export default function Hetrix() {
                         <path fillRule="evenodd" clipRule="evenodd" d="M101.059 59.4815L134.75 117.172H95.4407L67.271 70.3284L39.3115 117.172H0L34.8968 57.7802H76.3069L42.6164 0.0898438H81.9253L110.095 46.9333L138.055 0.0898438H177.366L142.469 59.4815H101.059Z" fill="white"/>
                      </svg>
                   </i>
-                  <div className="usecases-head__text">Hetrix</div>
+                  <div className="usecases-head__text">{t('use-case.hetrix.title')}</div>
                </h1>
             </div>
          </div>
@@ -43,7 +49,7 @@ export default function Hetrix() {
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            Crafting a brand experiences for Hetrix, a <span>game development company</span> focused on creating immersive video game experiences
+               {text_1[0]} {t('use-case.hetrix.[text_1_colored_text]') && <span>{t('use-case.hetrix.[text_1_colored_text]')}</span>} {text_1[1]}
             </p>
          </div>
       </section>
@@ -65,11 +71,11 @@ export default function Hetrix() {
          <div className='hetrix-font__container'>
             <div className="hetrix-font__row">
                <div className="hetrix-font__column">
-                  <div className="hetrix-font__txt">Typeface</div>
+                  <div className="hetrix-font__txt">{t('use-case.hetrix.typeface')}</div>
                </div>
                <div className="hetrix-font__column">
-               <h2 className="hetrix-font__title">Michroma font</h2>
-                  <div className="hetrix-font__sub-title">Regular</div>
+               <h2 className="hetrix-font__title">{t('use-case.hetrix.michroma_font')}</h2>
+                  <div className="hetrix-font__sub-title">{t('use-case.hetrix.regular')}</div>
                </div>
             </div>
             <div className="hetrix-font__row">
@@ -98,7 +104,7 @@ export default function Hetrix() {
       <section className='usecases__text-content usecases-text-content dir-r'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            Our approach to creating <span>compelling advertising materials</span> ensures that Hetrix gets attention and resonates with its desired audience.
+               {text_2[0]} {t('use-case.hetrix.[text_2_colored_text]') && <span>{t('use-case.hetrix.[text_2_colored_text]')}</span>} {text_2[1]}
             </p>
          </div>
       </section>
@@ -137,7 +143,7 @@ export default function Hetrix() {
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            Developing their UI not only highlights their accomplishments but also <span>embodies the innovative spirit</span> that defines the company's essence.
+               {text_3[0]} {t('use-case.hetrix.[text_3_colored_text]') && <span>{t('use-case.hetrix.[text_3_colored_text]')}</span>} {text_3[1]}
             </p>
          </div>
       </section>

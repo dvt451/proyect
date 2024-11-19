@@ -6,14 +6,20 @@ import Progressbar from '../home/files/Progressbar'
 import { Link } from 'react-router-dom'
 import videoLink from '../../../videos/zume bg.mp4'
 import zumeColors from '../../../videos/colors-zume2.webm'
+import { useTranslation } from 'react-i18next';
 
 export default function Zume() {
+   const { t } = useTranslation();
    const scrollTop = ()=>{
       window.scrollTo(0, 0);
    }
+
+   const text_1 = t('use-case.zume.text_1').split('[text_1_colored_text]');
+   const text_2 = t('use-case.zume.text_2').split('[text_2_colored_text]');
+   const text_3 = t('use-case.zume.text_3').split('[text_3_colored_text]');
   return (
     <>
-         <Header />
+   <Header />
    <OdometerAnimation />
     <main id='zume' className='usecases zume'>
    <Progressbar />
@@ -35,7 +41,7 @@ export default function Zume() {
                         <path d="M18.3524 0.467829L17.4026 17.3959L1.30232 13.0899L0.478474 15.5834L16.0225 21.7355L6.99468 36.0172L9.13154 37.544L19.6656 24.4397L30.1996 37.544L32.3364 36.0172L23.3086 21.7355L38.8526 15.5834L38.0288 13.0899L21.9285 17.3959L20.9787 0.467829L18.3524 0.467829Z" fill="white" stroke="white" stroke-width="2.6305"/>
                      </svg>
                   </i>
-                  <div className="usecases-head__text">Zume</div>
+                  <div className="usecases-head__text">{t('use-case.zume.title')}</div>
                </h1>
             </div>
          </div>
@@ -44,7 +50,7 @@ export default function Zume() {
          <div className='usecases-text-content__container'>
             {/* <h2 className="usecases-text-content__title">Title will come here</h2> */}
             <p className="usecases-text-content__text">
-            <span>Empowering brands, engaging audiences.</span> Stand out in the digital crowd with Zume.
+               {text_1[0]} {t('use-case.zume.[text_1_colored_text]') && <span>{t('use-case.zume.[text_1_colored_text]')}</span>} {text_1[1]}
             </p>
          </div>
       </section>
@@ -54,12 +60,12 @@ export default function Zume() {
       <section className="zume-font">
          <div className='zume-font__container'>
             <div className="zume-font__row">
-               <div className="zume-font__column">Regular</div>
-               <div className="zume-font__column zume-font__column_font-name">Bandica</div>
+               <div className="zume-font__column">{t('use-case.zume.regular')}</div>
+               <div className="zume-font__column zume-font__column_font-name">{t('use-case.zume.bandica')}</div>
             </div>
             <div className="zume-font__row zume-font__row_img">
             </div>
-               <div className="zume-font__column_font-name">Bandica</div>
+               <div className="zume-font__column_font-name">{t('use-case.zume.bandica')}</div>
             </div>
       </section>
       <section className='video-section'>
@@ -89,7 +95,7 @@ export default function Zume() {
       <section className='usecases__text-content usecases-text-content dir-r'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            Crafting <span>an exceptional and distinctive brand</span> guideline that embodies Zume's unique approach is what truly distinguishes it from the rest.
+               {text_2[0]} {t('use-case.zume.[text_2_colored_text]') && <span>{t('use-case.zume.[text_2_colored_text]')}</span>} {text_2[1]}
             </p>
          </div>
       </section>
@@ -120,7 +126,7 @@ export default function Zume() {
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            Specialized in generating leads and directing attention to brands that excel in <span>navigating complex markets through innovation.</span>
+                {text_3[0]} {t('use-case.zume.[text_3_colored_text]') && <span>{t('use-case.zume.[text_3_colored_text]')}</span>} {text_3[1]}
             </p>
          </div>
       </section>

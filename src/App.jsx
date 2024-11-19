@@ -15,7 +15,7 @@ import Privacy from './Components/pages/Privacy';
 import ScrollToTop from './Components/General/ScrollToTop';
 import ScrollbarColorHOC from './Components/General/ScrollbarColorHOC';
 import GraphicDesign from './Components/pages/blogs/GraphicDesign';
-import './i18n'; // Import your i18n configuration
+import './i18n';
 
 const App = () => {
     const lenisOptions = {
