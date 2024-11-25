@@ -27,17 +27,6 @@
    transition: transform 0.7s ease-in-out; /* Add transition for smooth sliding */
  }
  
- .blocks-wrapper.transformed-100vh {
-   transform: translateY(-100vh);
- }
- 
- .blocks-wrapper.transformed-200vh {
-   transform: translateY(-200vh);
- }
- 
- .blocks-wrapper.transformed-300vh {
-   transform: translateY(-300vh);
- }
  .casestudies__row{
    // margin: 0 toRem(100);
    // background-color: var(--colBlack);

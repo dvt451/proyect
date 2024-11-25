@@ -1,0 +1,717 @@
+.usecases-logo-section__container{
+   width: 100%;
+   @include adaptiveValue("height", 950, 180);
+   background: url('../img/usecases/venom/pic.webp') center / cover no-repeat;
+}
+.usecases-header{
+
+}
+.usecases-header__logo{
+      display: flex;
+      align-items: center;
+}
+.usecases {
+   background-color: #000;
+   // .usecases__head
+   section{
+      margin-bottom: toRem(20);
+   }
+
+   &__head {
+   }
+}
+.usecases-head {
+   width: 100%;
+   height: 100vh;
+   @media (min-width:$mobile){
+      padding: toRem(100);
+   }
+
+   &__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      &.content-corner{
+         @media (max-width:$mobile){
+            justify-content: center;
+            align-items: center; 
+        }
+         justify-content: flex-end;
+         align-items: flex-end;
+         .usecases-head__text{
+            @include adaptiveValue("font-size", 35, 20,$containerWidth,393);
+         }
+         .usecases-head__icon{
+            @include adaptiveValue("width", 42, 24,$containerWidth,393);
+            @include adaptiveValue("height", 42, 24,$containerWidth,393);
+         }
+         
+      }
+   }
+
+   // .usecases-head__content
+
+   &__content {
+      position: relative;
+      z-index: 1;
+   }
+
+   // .usecases-head__title
+
+   &__title {
+      display: flex;
+      align-items: center;
+      gap: toRem(25);
+      @include adaptiveValue("gap", 25, 7,$containerWidth,393);
+   }
+
+   // .usecases-head__icon
+
+   &__icon {
+      @include adaptiveValue("width", 177, 50,$containerWidth,393);
+      @include adaptiveValue("height", 117, 32,$containerWidth,393);
+      position: relative;
+      svg{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+      }
+   }
+
+   // .usecases-head__text
+
+   &__text {
+      font-family: 'Michroma';
+      font-size: 124.555px;
+      @include adaptiveValue("font-size", 124, 35,$containerWidth,393);
+      line-height: normal;
+      letter-spacing: toRem(2.491);
+   }
+}
+//========================================================================================================================================================
+.video-section{
+   .usecases__video{
+      height: toVW(850);
+   }
+   .icon-lines{
+      height: toVW(1200);
+   }
+   .zume-colors{
+      height: toVW(1000);
+   }
+}
+.usecases {
+
+   &__video{
+      width: 100%;
+      height: 100vh;
+      position: relative;
+   }
+
+   // .usecases__text-content
+
+   &__text-content {
+   }
+}
+.dir-r{
+   text-align: right;
+   padding-left: 0;
+   @include adaptiveValue("padding-right", 175, 0,$containerWidth,393);
+   .usecases-text-content__container{
+      align-items: flex-end;
+   }
+
+}
+.usecases-text-content {
+   padding-block: toRem(66);
+   @include adaptiveValue("padding-left", 175, 0,$containerWidth,393);
+   background-color: #000;
+
+   &__container{
+      display: flex;
+      flex-direction: column;
+      gap: toRem(16);
+   }
+
+   // .usecases-text-content__title
+
+   &__title {
+      color: #67DAB1;
+      @include adaptiveValue("font-size", 24, 14,$containerWidth,393);
+      font-weight: 600;
+      line-height: normal;
+   }
+
+   // .usecases-text-content__text
+
+   &__text {
+      max-width: toRem(1002);  
+      font-size: 42px;
+      @include adaptiveValue("font-size", 42, 18,$containerWidth,393);
+      font-weight: 300;
+      line-height: normal;
+      span{
+         color: #67DAB1;
+      }
+   }
+}
+//========================================================================================================================================================
+
+.usecases-pair {
+   display: flex;
+
+   &__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+   }
+   // .usecases-pair__column
+
+   &__column {
+   }
+   
+}
+.usecases-pair-1{
+   @media (max-width:$mobile){
+      flex-direction: column;
+      padding: 0;
+   }
+}
+.usecases-pair-1,.usecases-pair__container{
+   @media (max-width:$mobile){
+      padding: 0;
+   }
+
+   .usecases-pair__column{
+      // width: 50%;
+      // height: 100vh;
+      @media (max-width:$mobile){
+         //  width: 100%;
+         //  height: 50vh;
+      padding: 0;
+   }
+   }
+}
+.usecases-pair-2,.usecases-pair__container{
+   .usecases-pair__column{
+      width: 100%;
+      // @include adaptiveValue("height", 967, 220,$containerWidth,393);
+      padding: 0;
+   }
+}
+
+.usecases-pair__column_1{
+   width: 100%;
+   height: 100vh;
+   background: url('../img/usecases/trenfinance/sectionlogo2.webp') center / cover no-repeat;
+   @media (max-width:$mobile){
+       height: 50vh; 
+   }
+}
+.usecases-pair__column_2{
+   width: 100%;
+   height: 100vh;
+   background: url('../img/usecases/trenfinance/sectionlogo1.webp') center / cover no-repeat;
+   @media (max-width:$mobile){
+       height: 50vh; 
+   }
+}
+
+.usecases-pair__column_3{
+   @include adaptiveValue("height", 1080, 400,$containerWidth,767);
+   @media (max-width:$mobile){
+      @include adaptiveValue("height", 700, 395,767,393);
+   }
+}
+.usecases-pair__column_4{
+   @include adaptiveValue("height", 1080, 400,$containerWidth,767);
+   @media (max-width:$mobile){
+      @include adaptiveValue("height", 700, 395,767,393);
+   }
+}
+.usecases-pair__column_5{
+   background: url('../img/usecases/trenfinance/image5.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 960, 300,$containerWidth,767);
+      @media (max-width:$mobile){
+         @include adaptiveValue("height", 300, 220,767,393);
+      }
+      
+}
+.usecases-pair__column_6{
+   background: url('../img/usecases/trenfinance/image6.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 960, 300,$containerWidth,767);
+      @media (max-width:$mobile){
+         @include adaptiveValue("height", 300, 220,767,393);
+      }
+      
+}
+.usecases-pair__column_7{
+   background: url('../img/usecases/trenfinance/image7.webp') center / cover no-repeat;
+   @include adaptiveValue("height", 960, 300,$containerWidth,767);
+   @media (max-width:$mobile){
+      @include adaptiveValue("height", 800, 360,767,393);
+   }
+}
+.usecases-pair__column_8{
+   background: center / cover no-repeat;
+   @include adaptiveValue("height", 960, 300,$containerWidth,767);
+   @media (max-width:$mobile){
+      @include adaptiveValue("height", 800, 393,767,393);
+   }
+}
+.usecases-pair__column_9{
+   @include adaptiveValue("height", 986, 300,$containerWidth,767);
+   @media (max-width:$mobile){
+      @include adaptiveValue("height", 800, 350,767,393);
+        
+   }
+}
+.usecases-pair__column_10{
+   @include adaptiveValue("height", 986, 300,$containerWidth,767);
+   @media (max-width:$mobile){
+      @include adaptiveValue("height", 800, 350,767,393);
+        
+   }
+}
+
+
+//========================================================================================================================================================
+.trenfinance-gradients {
+   display: flex;
+   height: toRem(872);
+   // @include adaptiveValue("height", 872, 548,$containerWidth,393);
+   height: 100vh;
+   background-color: #fff;
+   @media (max-width:$tablet){
+      flex-direction: column;
+   }
+		// .trenfinance-gradients__column
+
+		&__column {
+         flex: 1 1 100%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         @media (max-width:$tablet){
+            &:nth-child(1){
+               flex: 1 1 55%;
+            }
+            &:nth-child(2){
+               flex: 1 1 45%;
+            }
+         }
+         &:nth-child(2){
+            flex-direction: row;
+            @media (max-width:$tablet){
+               flex-direction: column;
+            }
+         }
+		}
+
+		// .trenfinance-gradients__main
+
+		&__main {
+         height: 50%;
+         @media (max-width:$tablet){
+            height: 57%;
+         }
+		}
+
+		// .trenfinance-gradients__text
+
+		&__text {
+         position: relative;
+         z-index: 1;
+         display: inline-block;
+         @include adaptiveValue("padding-top", 41, 17,$containerWidth,393);
+         @include adaptiveValue("padding-left", 31, 15,$containerWidth,393);
+         font-size: 23.246px;
+         @include adaptiveValue("font-size", 23, 12,$containerWidth,393);
+         line-height: normal;
+		}
+
+		// .trenfinance-gradients__shapes
+
+		&__shapes {
+         display: flex;
+         height: 50%;
+		.trenfinance-gradients__text{
+         padding-left: 0;
+         width: 100%;
+         text-align: center;
+      }
+
+         @media (max-width:$tablet){
+            height: 43%;
+         }
+		}
+
+		// .trenfinance-gradients__shape
+
+		&__shape {
+         flex: 1 1 auto;
+         height: 100%;
+         position: relative;
+		}
+
+		// .trenfinance-gradients__col
+
+		&__col {
+         flex: 1 1 50%;
+         @media (max-width:$tablet){
+            display: flex;
+            flex: 1 1 42%;
+         }
+			// .trenfinance-gradients__col_block
+
+			&_block {
+            height: 50%;
+            @media (max-width:$tablet){
+               height: 100%;
+               width: 100%;
+            }
+			}
+		}
+
+		// .trenfinance-gradients__types
+
+		&__types {
+         flex: 1 1 50%;
+         @media (max-width:$tablet){
+            display: flex;
+            flex: 1 1 58%;
+         }
+		}
+
+      &__layer{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         display: flex;
+         justify-content: center;
+      }
+
+		// .trenfinance-gradients__type
+
+		&__type {
+         @media (max-width:$tablet){
+            height: 100% !important;
+            width: 100%;
+         }
+		}
+      .black{color: #000;}
+}
+//========================================================================================================================================================
+.usecases {
+
+   // .usecases__font
+
+   &__font {
+      font-family: 'Britanica-HeavySemiExpanded';
+   }
+}
+.trenfinance-font {
+   @include adaptiveValue("padding-top", 121, 15,$containerWidth,393);
+   @include adaptiveValue("padding-bottom", 159, 66,$containerWidth,393);
+   &__container{
+      display: flex;
+      @include adaptiveValue("gap", 145, 30,$containerWidth,393);
+      @media (max-width:$tablet){
+         flex-direction: column;
+      }
+   }
+
+   // .trenfinance-font_uppercase
+
+   &_uppercase {
+   }
+
+   // .trenfinance-font_lowercase
+
+   &_lowercase {
+      text-transform: lowercase;
+   }
+
+   // .trenfinance-font_symbols
+
+   &_symbols {
+   }
+
+   // .trenfinance-font__column
+
+   &__column {
+      display: flex;
+      flex-direction: column;
+      &:first-child{
+         gap: toRem(24);
+         @include adaptiveValue("padding-left", 156, 0,$containerWidth,991.98);
+      }
+
+      &:last-child{
+         @include adaptiveValue("gap", 52, 25,$containerWidth,393);
+      @media (max-width:$tablet){
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+         }
+      }
+   }
+
+   // .trenfinance-font__row
+
+   &__row {
+      &:first-child{
+         display: flex;
+         flex-direction: column;
+         @include adaptiveValue("gap", 0, 24,$containerWidth,393);
+         @media (max-width:$tablet){
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+         }
+         @media (max-width: em(393)){
+             flex-direction: column; 
+         }
+      }
+   }
+
+   // .trenfinance-font__title
+
+   &__title {
+      color: #67DAB1;
+      @include adaptiveValue("font-size", 32, 15,$containerWidth,393);
+      line-height: normal;
+      white-space: wrap;
+   }
+
+   // .trenfinance-font__main-text
+
+   &__main-text {
+      font-size: 360px;
+      @include adaptiveValue("font-size", 360, 120,$containerWidth,393);
+      line-height: normal;
+   }
+
+   // .trenfinance-font__text
+
+   &__text {
+      @include adaptiveValue("font-size", 39, 14,$containerWidth);
+      line-height: normal;
+   }
+
+   // .trenfinance-font__list
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      border-left: toRem(1.211) solid #fff;
+      border-top: toRem(1.211) solid #fff;
+      max-height: toRem(414);
+      @include adaptiveValue("max-width", 495, 145,$containerWidth,393);
+   }
+
+   // .trenfinance-font__item
+
+   &__item {
+      @include adaptiveValue("width", 82, 24,$containerWidth,393);
+      @include adaptiveValue("height", 82, 24,$containerWidth,393);
+      display: grid;
+      place-items: center;
+      border-right: toRem(1.211) solid;
+      border-bottom: toRem(1.211) solid;
+      @include adaptiveValue("font-size", 24, 7,$containerWidth,393);
+      line-height: 180%;
+   }
+
+   // .trenfinance-font__headings
+
+   &__headings {
+   }
+
+   // .trenfinance-font__heading
+
+   &__heading {
+      line-height: normal;
+      // .trenfinance-font__heading_1
+
+      &_1 {
+         @include adaptiveValue("font-size", 64, 20,$containerWidth,393);
+         @include adaptiveValue("margin-bottom", 30, 9,$containerWidth,393);
+      }
+
+      // .trenfinance-font__heading_2
+
+      &_2 {
+         @include adaptiveValue("font-size", 32, 10,$containerWidth,393);
+         @include adaptiveValue("margin-bottom", 38, 10,$containerWidth,393);
+      }
+
+      // .trenfinance-font__heading_3
+
+      &_3 {
+         @include adaptiveValue("font-size", 16, 6,$containerWidth,393);
+      }
+   }
+}
+//========================================================================================================================================================
+.usecases {
+
+   // .usecases__image
+
+   &__image {
+   }
+}
+.usecases-image,.video-section {
+   &__container {
+      @media (max-width:$mobile){
+          padding: 0; 
+      }
+   }
+   &__pic{
+      width: 100%;
+      @include adaptiveValue("height", 1148, 220,$containerWidth,320);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+   &_mix{
+      background-image: url('../img/usecases/trenfinance/mix.webp');
+   }
+   &_1{
+      @include adaptiveValue("height", 892, 261,$containerWidth,393);
+   }
+   &_2{
+      background-image: url('../img/usecases/trenfinance/picture2.webp');
+      @include adaptiveValue("height", 1035, 200,$containerWidth,393);
+   }
+   &_3{
+      @include adaptiveValue("height", 1080, 452,$containerWidth,393);
+   }
+   &_4{
+      @include adaptiveValue("height", 786, 100,$containerWidth,320);
+   }
+   &_5{
+      background-image: url('../img/usecases/trenfinance/picture5.webp');
+      @include adaptiveValue("height", 786, 100,$containerWidth,320);
+   }
+   &_6{
+      @include adaptiveValue("height", 1054, 320,$containerWidth,320);
+   }
+   &_7{
+      @include adaptiveValue("height", 892, 261,$containerWidth,320);
+   }
+}
+//========================================================================================================================================================
+
+.usecases-triple {
+   &__container{
+      display: flex;
+      @media (max-width:$mobile){
+          flex-direction: column;
+          padding: 0;
+      }
+   }
+
+   // .usecases-triple__column
+
+   &__column {
+      flex: 1 1  auto;
+      display: flex;
+      flex-direction: column;
+      &:last-child{
+         @media (max-width:$mobile){
+             flex-direction: row;
+         }
+      }
+   }
+
+   // .usecases-triple__img
+
+   &__img {
+      width: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+
+      // .usecases-triple__img_1
+
+      &_1 {
+         @include adaptiveValue("height", 897, 220,$containerWidth,393);
+         @media (max-width:$mobile){
+            @include adaptiveValue("height", 500, 220,767,320);
+
+         }
+      }
+
+      // .usecases-triple__img_2
+
+      &_2 {
+         @media (max-width:$mobile){
+            @include adaptiveValue("height", 350, 120,767,320);
+         }
+      }
+
+      // .usecases-triple__img_3
+
+      &_3 {
+         @media (max-width:$mobile){
+            @include adaptiveValue("height", 350, 120,767,320);
+         }
+      }
+   }
+
+   // .usecases-triple__row
+
+   &__row {
+      width: 100%;
+      height: 100%;
+   }
+}
+//========================================================================================================================================================
+.usecases-navigation {
+
+   // .usecases-navigation__container
+
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   // .usecases-navigation__arrow
+
+   &__arrow {
+      display: inline-block;
+      @include adaptiveValue("padding-block", 67, 48,$containerWidth,393);
+      @include adaptiveValue("width", 266, 72,$containerWidth,393);
+      height: toRem(15);
+      &:hover{
+         path{
+            fill: var(--sectionColor);
+         }
+      }
+   }
+
+   // .usecases-navigation__prev
+
+   &__prev {
+   }
+
+   // .usecases-navigation__next
+
+   &__next {
+   }
+}
+
+//========================================================================================================================================================

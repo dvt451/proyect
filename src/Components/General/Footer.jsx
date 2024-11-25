@@ -11,7 +11,7 @@ export default function Footer() {
    const location = useLocation().pathname
    useEffect(() => {
       const mainBlock = document.querySelector('main');
-      if (mainBlock.classList.contains('blog')) {
+      if (mainBlock?.classList.contains('blog')) {
          setBlog(true)
       } else {
          setBlog(false)

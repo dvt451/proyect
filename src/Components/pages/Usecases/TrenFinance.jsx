@@ -3,12 +3,16 @@ import Header from './Header'
 import { Link } from 'react-router-dom'
 import OdometerAnimation from '../../General/Ordometer'
 import Progressbar from '../home/files/Progressbar'
-import videoLink from '../../../videos/tren discord.mp4'
-import videoLink2 from '../../../videos/001.mp4'
-import videoLink3 from '../../../videos/subtract.mp4'
-import videoLink4 from '../../../videos/nfthq.mp4'
-import videoLink5 from '../../../videos/proyect-use-case-tren-bottom-video.webm'
+import videoLink from '../../../videos/tren half 4.webm'
+import videoLink2 from '../../../videos/tren use case post 2.webm'
+import videoLink3 from '../../../videos/subtract.webm'
+import videoLink5 from '../../../videos/tren use case post 5.webm'
 import { useTranslation } from 'react-i18next';
+import Image1 from '../../../img/usecases/trenfinance/tren.webp'
+import Image2 from '../../../img/usecases/trenfinance/mix.webp'
+import Image3 from '../../../img/usecases/trenfinance/image7.webp'
+import Image9 from '../../../img/usecases/trenfinance/image9.webp'
+import Image10 from '../../../img/usecases/trenfinance/image1.webp'
 
 export default function TrenFinance() {
    const { t } = useTranslation();
@@ -130,95 +134,19 @@ export default function TrenFinance() {
             </div>
          </div>
       </section>
-      <section className='usecases__font trenfinance-font'>
-         <div className='trenfinance-font__container'>
-            <div className="trenfinance-font__column">
-               <div className='trenfinance-font__row'>
-                  <h2 className="trenfinance-font__title">Britanica HeavySemiExpanded</h2>
-                  <p className="trenfinance-font__main-text">Aa</p>
-               </div>
-               <div className='trenfinance-font__row'>
-                  <p className="trenfinance-font__text trenfinance-font_uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                  <p className="trenfinance-font__text trenfinance-font_lowercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                  <p className="trenfinance-font__text trenfinance-font_symbols">1234567890$%&#</p>
-               </div>
-            </div>
-            <div className="trenfinance-font__column">
-               <ul className='trenfinance-font__list'>
-                  <li className="trenfinance-font__item">Aa</li>
-                  <li className="trenfinance-font__item">Bb</li>
-                  <li className="trenfinance-font__item">Cc</li>
-                  <li className="trenfinance-font__item">Dd</li>
-                  <li className="trenfinance-font__item">Ee</li>
-                  <li className="trenfinance-font__item">Ff</li>
-                  <li className="trenfinance-font__item">Gg</li>
-                  <li className="trenfinance-font__item">Hh</li>
-                  <li className="trenfinance-font__item">Ii</li>
-                  <li className="trenfinance-font__item">Jj</li>
-                  <li className="trenfinance-font__item">Kk</li>
-                  <li className="trenfinance-font__item">Ll</li>
-                  <li className="trenfinance-font__item">Mm</li>
-                  <li className="trenfinance-font__item">Nn</li>
-                  <li className="trenfinance-font__item">Oo</li>
-                  <li className="trenfinance-font__item">Pp</li>
-                  <li className="trenfinance-font__item">Qq</li>
-                  <li className="trenfinance-font__item">Rr</li>
-                  <li className="trenfinance-font__item">Ss</li>
-                  <li className="trenfinance-font__item">Tt</li>
-                  <li className="trenfinance-font__item">Uu</li>
-                  <li className="trenfinance-font__item">Vv</li>
-                  <li className="trenfinance-font__item">Ww</li>
-                  <li className="trenfinance-font__item">Xx</li>
-                  <li className="trenfinance-font__item">Yy</li>
-                  <li className="trenfinance-font__item">Zz</li>
-                  <li className="trenfinance-font__item"></li>
-                  <li className="trenfinance-font__item"></li>
-                  <li className="trenfinance-font__item"></li>
-                  <li className="trenfinance-font__item"></li>
-               </ul>
-               <div className="trenfinance-font__headings">
-                  <div className="trenfinance-font__heading trenfinance-font__heading_1">{t('use-case.tren.texts.heading')} 64-80 {t('use-case.tren.texts.px')}</div>
-                  <div className="trenfinance-font__heading trenfinance-font__heading_2">{t('use-case.tren.texts.heading')} 32-56 {t('use-case.tren.texts.px')}</div>
-                  <div className="trenfinance-font__heading trenfinance-font__heading_3">{t('use-case.tren.texts.body')} 16-24 {t('use-case.tren.texts.px')}</div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section className="usecases__image">
+      <section className="usecases__image usecases-image">
          <div className='usecases-image__container'>
-            <div className='trenfinance-mix'>
-               <div className="trenfinance-mix__col-1 trenfinance-mix__col">
-                  <div className="trenfinance-mix__type-1 trenfinance-mix__img trenfinance-mix__img_1" dangerouslySetInnerHTML={{ __html: `
-                        <video
-                          loop
-                          muted
-                          autoPlay
-                          playsInline
-                          src="${videoLink2}"
-                        ></video>`
-                        }}>
-                     </div>
-                  <div className="trenfinance-mix__type-1 trenfinance-mix__img trenfinance-mix__img_2"dangerouslySetInnerHTML={{ __html: `
-                        <video
-                          loop
-                          muted
-                          autoPlay
-                          playsInline
-                          src="${videoLink4}"
-                        ></video>`
-                        }}></div>
-               </div>
-               <div className="trenfinance-mix__col-2 trenfinance-mix__col">
-                  <div className="trenfinance-mix__type-2 trenfinance-mix__img trenfinance-mix__img_3"></div>
-                  <div className="trenfinance-mix__type-3 trenfinance-mix__img trenfinance-mix__img_4"></div>
-               </div>
-               <div className="trenfinance-mix__col-3 trenfinance-mix__col">
-                  <div className="trenfinance-mix__type-1 trenfinance-mix__img trenfinance-mix__img_5"></div>
-                  <div className="trenfinance-mix__type-1 trenfinance-mix__img trenfinance-mix__img_6"></div>
-               </div>
+            <div style={{backgroundImage: `url(${Image1})`}} className="usecases-image__pic usecases-image_7">
             </div>
          </div>
       </section>
+      <section className="usecases__image usecases-image">
+         <div className='usecases-image__container'>
+            <div style={{backgroundImage: `url(${Image2})`}} className="usecases-image__pic usecases-image_8">
+            </div>
+         </div>
+      </section>
+
       <section className='usecases__pair-col usecases-pair usecases-pair__container usecases-pair-1'>
          <div className="usecases-pair__column usecases-pair__column_3 -ibg"></div>
          <div className="usecases-pair__column usecases-pair__column_4 -ibg"></div>
@@ -242,7 +170,7 @@ export default function TrenFinance() {
             <div className="usecases-pair__column usecases-pair__column_6 -ibg"></div>
          </div>
       </section>
-      <section className="usecases__video" dangerouslySetInnerHTML={{ __html: `
+      <section className="usecases__video usecases__video_1" dangerouslySetInnerHTML={{ __html: `
         <video
           loop
           muted
@@ -251,9 +179,11 @@ export default function TrenFinance() {
           src="${videoLink3}"
         ></video>
       ` }}></section>
-      <section className='usecases__pair-col usecases-pair__container usecases-pair usecases-pair-1'>
-            <div className="usecases-pair__column usecases-pair__column_7 -ibg"></div>
-            <div className="usecases-pair__column usecases-pair__column_8 -ibg"></div>
+      <section className="usecases__image usecases-image">
+            <div className='usecases-image__container'>
+               <div style={{backgroundImage: `url(${Image3})`}} className="usecases-image__pic usecases-image_9">
+               </div>
+            </div>
       </section>
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
@@ -268,32 +198,34 @@ export default function TrenFinance() {
                </div>
             </div>
       </section>
-      <section className='usecases__pair-col usecases-pair usecases-pair__container usecases-pair-1'>
-         <div className="usecases-pair__column usecases-pair__column_9 -ibg"></div>
-         <div className="usecases-pair__column usecases-pair__column_10 -ibg"></div>
+      <section className="usecases__image usecases-image">
+            <div className='usecases-image__container'>
+               <div style={{backgroundImage: `url(${Image9})`}} className="usecases-image__pic usecases-image_10">
+               </div>
+            </div>
+      </section>
+      <section className="usecases__video usecases__video_1" dangerouslySetInnerHTML={{ __html: `
+        <video
+          loop
+          muted
+          autoPlay
+          playsInline
+          src="${videoLink2}"
+        ></video>
+      ` }}></section>
+      <section className="usecases__image usecases-image">
+            <div className='usecases-image__container'>
+               <div style={{backgroundImage: `url(${Image9})`}} className="usecases-image__pic usecases-image_10">
+               </div>
+            </div>
       </section>
       <section className="usecases__image usecases-image">
-         <div className='usecases-image__container'>
-            <div className="usecases-image__pic usecases-image_4">
-            </div>
-         </div>
-      </section>
-      <section className='usecases-triple'>
-         <div className='usecases-triple__container'>
-            <div className="usecases-triple__column">
-               <div className="usecases-triple__img usecases-triple__img_1"></div>
-            </div>
-            <div className="usecases-triple__column">
-               <div className="usecases-triple__row">
-                  <div className="usecases-triple__img usecases-triple__img_2"></div>
-               </div>
-               <div className="usecases-triple__row">
-                  <div className="usecases-triple__img usecases-triple__img_3"></div>
+            <div className='usecases-image__container'>
+               <div style={{backgroundImage: `url(${Image10})`}} className="usecases-image__pic usecases-image_10">
                </div>
             </div>
-         </div>
-         
       </section>
+
       <section className="usecases__image usecases-image">
          <div className='usecases-image__container'>
             <div className="usecases-image__pic usecases-image_6" dangerouslySetInnerHTML={{ __html: `

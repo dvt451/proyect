@@ -1,0 +1,202 @@
+.zume{
+
+   .usecases__video_1{
+      max-height: toRem(1020);
+      height: toVW(1020);
+   }
+   .usecases-head {
+         padding: 0;
+         &__container{
+         max-width: toRem(1920);
+         padding: 0;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+      }
+   }
+   .progress-bar__filled{
+      background-image: linear-gradient(to right, #8006FF,#8006FF);
+   }
+   .usecases-text-content{
+      &__title,span{
+         color: #47FE6A;
+      }
+   }
+   .usecases-head__text{
+      font-family: var(--ffBandica);
+   }
+   .usecases-head__icon{
+   }
+
+.zume-logo-section {
+   @include adaptiveValue("height", 1020, 416,$containerWidth,393);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 toRem(66);
+      // .zume-logo-section__logo
+
+   &__logo {
+      @media (max-width:$tablet){
+          width: 100%;
+      }
+      object-fit: contain;
+   }
+}
+.zume-font {
+
+   &__container{
+      overflow: hidden;
+   }
+
+   // .zume-font__row
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      &:nth-child(1){
+      }
+      &_img{
+         background: url('../img/usecases/zume/image2.webp') center / cover no-repeat;
+         @include adaptiveValue("height", 699, 241,$containerWidth,393);
+         margin: 0 toRem(-16);
+      }
+   }
+
+   // .zume-font__column
+
+   &__column {
+      &:nth-child(1){
+         color: #fff;
+         font-family: "Bandica";
+         font-size: 36px;
+         @include adaptiveValue("font-size", 36, 24,$containerWidth,393);
+         line-height: normal;
+         letter-spacing: toRem(0.72);
+         @media (max-width:$mobile){
+             padding-bottom: toRem(24); 
+         }
+      }
+      
+   }
+   .zume-font__column_font-name{
+      &:nth-child(2){
+         @media (max-width:$mobile){
+             display: none; 
+         }
+      }
+      &:nth-child(3){
+         @media (min-width:$mobile){
+            display: none; 
+         }
+      }
+      display: block;
+      color: #fff;
+      font-family: "Bandica";
+      font-size: 149.054px;
+      @include adaptiveValue("font-size", 149,67,$containerWidth,393);
+      line-height: normal;
+      letter-spacing: toRem(2.981);
+      @media (max-width:$mobile){
+         padding-top: toRem(33);
+      }
+      @media (max-width: em(393)){
+          font-size: toRem(50); 
+      }
+   }
+}
+//========================================================================================================================================================
+.usecases-image {
+
+   &_3{
+      background: url('../img/usecases/zume/image11.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 786, 323,$containerWidth,393);
+   }
+
+   &_6{
+      background: url('../img/usecases/zume/image17.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 1054, 274,$containerWidth,393);
+   }
+
+   &_4{
+      background: url('../img/usecases/zume/image14.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 936, 288,$containerWidth,393);
+   }
+
+   &_13 {
+      background: url('../img/usecases/zume/image3.webp') center / cover no-repeat;
+   }
+   &_14 {
+      background: url('../img/usecases/zume/image6.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 892, 261,$containerWidth,393);
+   }
+   &_15{
+      background: url('../img/usecases/zume/image7.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 960, 220,$containerWidth,393);
+   }
+   &_2{
+      background: url('../img/usecases/zume/image8.webp') center / cover no-repeat;
+   }
+}
+.usecases-pair__column{
+   &_3{
+      background: url('../img/usecases/zume/image4.webp') center / cover no-repeat;
+   }
+   &_4{
+      background: url('../img/usecases/zume/image5.webp') center / cover no-repeat;
+   }
+   &_5{
+      background: url('../img/usecases/zume/image9.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 941, 350,$containerWidth,767);
+      @media (max-width:$mobile){
+         @include adaptiveValue("height", 600, 350,767,393); 
+      }
+   }
+   &_6{
+      background: url('../img/usecases/zume/image10.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 941, 350,$containerWidth,767);
+      @media (max-width:$mobile){
+         @include adaptiveValue("height", 500, 300,767,393);   
+         background-position: bottom;
+      }
+   }
+   &_7{
+      background: url('../img/usecases/zume/image12.webp') center / cover no-repeat;
+   }
+   &_8{
+      background: url('../img/usecases/zume/image13.webp') center / cover no-repeat;
+   }
+   &_9{
+      background: url('../img/usecases/zume/image15.webp') center / cover no-repeat;
+   }
+
+}
+.usecases-pair {
+
+   // .usecases-pair__container
+
+   &__container {
+      @media (max-width:$mobile){
+         flex-direction: column; 
+     }
+   }
+
+   // .usecases-pair__column
+
+   &__column {
+      
+      // .usecases-pair__column_5
+
+      &_5 {
+      }
+
+      // .usecases-pair__column_6
+
+      &_6 {
+      }
+   }
+}
+
+}

@@ -1,28 +1,30 @@
 import React from 'react'
-import work1 from '../../../../img/works/work1.webp'
-import work2 from '../../../../img/works/work2.webp'
-import work3 from '../../../../img/works/work3.webp'
+
+import work16 from '../../../../img/usecases/voltix/image9.webp'
+import work18 from '../../../../img/usecases/trenfinance/picture3.webp'
+import work1 from '../../../../img/usecases/zume/image15.webp'
+import work11 from '../../../../img/works/work21.webp'
+import work17 from '../../../../img/works/work7.webp'
+import work2 from '../../../../img/usecases/pixelbros/image4.webp'
+import work14 from '../../../../img/usecases/voltix/image12.webp'
+import work5 from '../../../../img/casestudio/hetrix.webp'
+
 import work4 from '../../../../img/works/work4.webp'
-import work5 from '../../../../img/works/work5.webp'
-import work6 from '../../../../img/works/work6.webp'
-import work7 from '../../../../img/works/work7.webp'
 import work8 from '../../../../img/works/work8.webp'
-import work9 from '../../../../img/works/work9.webp'
-import work10 from '../../../../img/works/work10.webp'
-import work11 from '../../../../img/works/work11.webp'
 import work12 from '../../../../img/works/work12.webp'
 import work13 from '../../../../img/works/work13.webp'
-import work14 from '../../../../img/works/work14.webp'
 import work15 from '../../../../img/works/work15.webp'
-import work16 from '../../../../img/works/work16.webp'
-import work17 from '../../../../img/works/work17.webp'
-import work18 from '../../../../img/works/work18.webp'
 import work19 from '../../../../img/works/work19.webp'
-import work20 from '../../../../img/works/work20.webp'
 
 import videoLink1 from '../../../../videos/ghyser.mp4'
 import videoLink2 from '../../../../videos/proyect old.mp4'
-import videoLink3 from '../../../../videos/tren discord.mp4'
+import videoLink3 from '../../../../videos/tren half 4.webm'
+import videoLink4 from '../../../../img/usecases/voltix/video/video1.webm'
+import videoLink5 from '../../../../img/usecases/pixelbros/video/video2.webm'
+import videoLink6 from '../../../../videos/subtract.webm'
+import videoLink7 from '../../../../img/usecases/t3lab/video/video2.webm'
+import videoLink8 from '../../../../videos/tren use case post 2.webm'
+import videoLink9 from '../../../../videos/proyect.webm'
 
 
 import InfiniteRunningImages from './Runningline'
@@ -39,7 +41,7 @@ id: 1,
 id: 2,
    },
    {
-      image: work3,
+      video: videoLink4,
       link: '',
 id: 3,
    },
@@ -54,13 +56,12 @@ id: 4,
 id: 5,
    },
    {
-      image: work6,
+      video: videoLink5,
       link: '',
 id: 6,
    },
    {
       video: videoLink3,
-      image: work7,
       link: '',
 id: 7,
    },
@@ -71,12 +72,12 @@ id: 7,
 id: 8,
    },
    {
-      image: work9,
+      video: videoLink7,
       link: '',
 id: 9,
    },
    {
-      image: work10,
+      video: videoLink6,
       link: '',
 id: 10,
    },
@@ -129,9 +130,14 @@ id: 18,
 id: 19,
    },
    {
-      image: work20,
+      video: videoLink8,
       link: '',
 id: 20,
+   },
+   {
+      video: videoLink9,
+      link: '',
+id: 21,
    },
 ]
 
@@ -159,4 +165,3 @@ export default function Works() {
     
   )
 }
-

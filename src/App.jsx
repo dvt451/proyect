@@ -16,6 +16,10 @@ import ScrollToTop from './Components/General/ScrollToTop';
 import ScrollbarColorHOC from './Components/General/ScrollbarColorHOC';
 import GraphicDesign from './Components/pages/blogs/GraphicDesign';
 import './i18n';
+import T3lab from './Components/pages/Usecases/T3lab';
+import Pixelbros from './Components/pages/Usecases/Pixelbros';
+import Notelix from './Components/pages/Usecases/Notelix';
+import Voltix from './Components/pages/Usecases/Voltix';
 
 const App = () => {
     const lenisOptions = {
@@ -58,6 +62,10 @@ const App = () => {
                             <Route element={<Hetrix />} path="/hetrix" />
                             <Route element={<Venom />} path="/venom" />
                             <Route element={<Zume />} path="/zume" />
+                            <Route element={<T3lab />} path="/t3lab" />
+                            <Route element={<Pixelbros />} path="/pixelbros" />
+                            <Route element={<Notelix />} path="/notelix" />
+                            <Route element={<Voltix />} path="/voltix" />
                             <Route element={<GraphicDesign />} path="/blogs/Graphic Design" />
                             <Route path="*" element={<Notfound />} />
                         </Routes>

@@ -563,6 +563,13 @@
             opacity: 0;
          }
       }
+      video{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+      }
    }
 
    // .casestudies__body
@@ -651,6 +658,34 @@
          z-index: 1;
       }
    }
+   &.transformed-5{
+      .casestudies-aside__item-5{
+         opacity: 1;
+         visibility: visible;
+         z-index: 1;
+      }
+   }
+   &.transformed-6{
+      .casestudies-aside__item-6{
+         opacity: 1;
+         visibility: visible;
+         z-index: 1;
+      }
+   }
+   &.transformed-7{
+      .casestudies-aside__item-7{
+         opacity: 1;
+         visibility: visible;
+         z-index: 1;
+      }
+   }
+   &.transformed-8{
+      .casestudies-aside__item-8{
+         opacity: 1;
+         visibility: visible;
+         z-index: 1;
+      }
+   }
    
 
    &__item{
@@ -686,6 +721,13 @@
       width: 100%;
       height: toRem(209);
       @include adaptiveValue("height", 209, 120,$containerWidth,991);
+      video{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+      }
    }
 }
 //========================================================================================================================================================

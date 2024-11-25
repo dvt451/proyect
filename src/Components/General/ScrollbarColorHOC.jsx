@@ -16,7 +16,15 @@ const ScrollbarColorHOC = ({ children }) => {
       document.documentElement.style.setProperty('--sectionColor', '#67DAB1');
    } else if (location.pathname === '/zume') {
       document.documentElement.style.setProperty('--sectionColor', '#8006FF');
-   } else {
+   }else if (location.pathname === '/t3lab') {
+    document.documentElement.style.setProperty('--sectionColor', '#FB4B14');
+  } else if (location.pathname === '/pixelbros') {
+    document.documentElement.style.setProperty('--sectionColor', '#3A36FF');
+  }else if (location.pathname === '/notelix') {
+    document.documentElement.style.setProperty('--sectionColor', '#C8E944');
+  }else if (location.pathname === '/voltix') {
+    document.documentElement.style.setProperty('--sectionColor', '#00FFA3');
+  } else {
      // Set default color if the route doesn't match
      document.documentElement.style.setProperty('--sectionColor', '#D5FF63');
    }

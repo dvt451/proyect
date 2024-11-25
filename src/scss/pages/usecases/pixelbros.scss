@@ -1,0 +1,116 @@
+.pixelbros{
+    .progress-bar__filled{
+        background-image: linear-gradient(to right, #3A36FF,#3A36FF);
+     }
+    .usecases-text-content{
+        padding-left: 0;
+        &__container{
+            max-width: toRem(1245);
+            @include adaptiveValue("padding-block", 190, 60);
+            svg{
+                @include adaptiveValue("width", 366, 150);
+                @include adaptiveValue("margin-bottom", 40, 30);
+            }
+            p{
+                width: 100%;
+                max-width: 100%;
+                @include adaptiveValue("font-size", 28, 16);
+                font-family: "Open Sans";
+                line-height: normal;
+                color: #787878;
+                font-weight: 300;
+                &:not(:last-child) {
+                    @include adaptiveValue("margin-bottom", 100, 20);
+                }
+            }
+        }
+    }
+    .usecases-image{
+        &__container{
+            padding: 0;
+        }
+        .usecases-image__pic{
+            height: toVW(1106);
+            max-height: toRem(1106);
+        }
+        &_1{
+            height: toVW(1080);
+            max-height: toRem(1080);
+        }
+        &_3,&_7,&_8{
+            height: toVW(998);
+            max-height: toRem(998);
+        }
+        &_6{
+            height: toVW(1126);
+            max-height: toRem(1126);
+        }
+    }
+    .usecases {
+
+		// .usecases__text-content-2
+
+		&__text-content-2 {
+		}
+}
+    .usecases-text-content-2 {
+
+		// .usecases-text-content-2__container
+
+		&__container {
+            max-width: toRem(1245);
+            @include adaptiveValue("padding-block", 100, 40);
+		}
+
+		// .usecases-text-content-2__title
+
+		&__title {
+            color: #FFF;
+            font-family: "Open Sans";
+            @include adaptiveValue("font-size", 42, 24);
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: toRem(34);
+		}
+
+		// .usecases-text-content-2__text
+
+		&__text {
+            color: #FFF;
+            font-family: "Open Sans";
+            @include adaptiveValue("font-size", 28, 16);
+            font-weight: 300;
+            line-height: normal;
+		}
+    }
+    .video-image-section {
+
+		// .video-image-section__container
+
+		&__container {
+            display: flex;
+            height: toVW(1106);
+            max-height: toRem(1106);
+		}
+
+		// .video-image-section__video
+
+		&__video {
+            position: relative;
+            width: 100%;
+            height: 100%;
+		}
+
+		// .video-image-section__image
+
+		&__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+		}
+    }
+
+}
