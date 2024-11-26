@@ -29,6 +29,8 @@ export default function T3lab() {
       window.scrollTo(0, 0);
    }
 
+    const text_2 = t('use-case.t3lab.text_2').split('[text_2_colored_text]');
+
   return (
    <>
    <Header />
@@ -48,10 +50,10 @@ export default function T3lab() {
             </svg>
 
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+                {t('use-case.t3lab.text_1')}
             </p>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success.<span> Through strategic guidance and ample support, we empower projects to thrive in their respective markets.</span>
+                {text_2[0]} {t('use-case.t3lab.[text_2_colored_text]') && <span>{t('use-case.t3lab.[text_2_colored_text]')}</span>} {text_2[1]}
             </p>
          </div>
       </section>

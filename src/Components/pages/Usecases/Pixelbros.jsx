@@ -51,10 +51,10 @@ export default function Pixelbros() {
             <path fill-rule="evenodd" clip-rule="evenodd" d="M207.156 0.223633V34.7119H234.747H241.645V0.223633H234.747H207.156ZM234.747 20.9166V27.8143H214.054V20.9166H234.747ZM234.747 7.12129V14.0189H214.054V7.12129H234.747ZM241.644 14.0257H234.755V20.9154H241.644V14.0257Z" fill="white"/>
             </svg>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+                {t('use-case.pixelbros.text_1')}
             </p>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+                {t('use-case.pixelbros.text_2')}
             </p>
          </div>
       </section>
@@ -125,9 +125,9 @@ export default function Pixelbros() {
       </section>
       <section className='usecases__text-content-2 usecases-text-content-2'>
          <div className='usecases-text-content-2__container'>
-            <div className=' usecases-text-content-2__title'>Overview</div>
+            <div className=' usecases-text-content-2__title'>{t('use-case.pixelbros.overview')}</div>
             <p className="usecases-text-content-2__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+                {t('use-case.pixelbros.text_3')}
             </p>
          </div>
       </section>

@@ -51,10 +51,10 @@ export default function Voltix() {
             <path d="M0.507812 0H32.0078V31.5H15.3663L0.507812 15.3809V0Z" fill="black"/>
             </svg>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+                {t('use-case.voltix.text_1')}
             </p>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+                {t('use-case.voltix.text_2')}
             </p>
          </div>
       </section>
@@ -88,10 +88,10 @@ export default function Voltix() {
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+            {t('use-case.voltix.text_3')}
             </p>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+            {t('use-case.voltix.text_4')}
             </p>
          </div>
       </section>
@@ -136,10 +136,10 @@ export default function Voltix() {
       <section className='usecases__text-content usecases-text-content'>
          <div className='usecases-text-content__container'>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+            {t('use-case.voltix.text_5')}
             </p>
             <p className="usecases-text-content__text">
-            With distinct logo of opposing arrows in radiant orange, we signify the dynamic exchange of ideas and the transformative journey toward success. Through strategic guidance and ample support, we empower projects to thrive in their respective markets.
+            {t('use-case.voltix.text_6')}
             </p>
          </div>
       </section>
