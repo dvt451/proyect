@@ -93,19 +93,19 @@ export default function Header() {
                      {atHome ?
                          <button
                          onClick={()=>{
-                              const element = document.querySelector('#'+t(t(item)));
+                              const element = document.querySelector('#'+t(item));
                               element?.scrollIntoView({
                                  behavior: 'smooth'
                               })
                          }}
-                         className='menu__link' ><span className='menu__link_text'>{t(t(item))}</span>{t(t(item)) === 'Work' ? <span className='work-count'>{workCount}</span> : false}</button>
+                         className='menu__link' ><span className='menu__link_text'>{t(item)}</span>{t(item) === 'Work' ? <span className='work-count'>{workCount}</span> : false}</button>
 
                      :
                      <Link
                          to='/'
                          onClick={()=>{
                            setTimeout(() => {
-                              const element = document.querySelector('#'+t(t(item)));
+                              const element = document.querySelector('#'+t(item));
                               element?.scrollIntoView({
                                  behavior: 'smooth'
                               })
@@ -130,27 +130,27 @@ export default function Header() {
                               setBurgerActive(false)
                               document.body.style.overflow = 'auto';
                               setTimeout(() => {
-                                 const element = document.querySelector('#'+item);
+                                 const element = document.querySelector('#'+t(item));
                                  element?.scrollIntoView({
                                     behavior: 'smooth'
                                  })
                               }, 100);
-                           }} >{item}{item === 'Work' ? <span className='work-count'>{workCount}</span> : false}</button>
+                           }} >{t(item)}{t(item) === 'Work' ? <span className='work-count'>{workCount}</span> : false}</button>
                            : <Link className='menu__link' onClick={()=>{
                               setBurgerActive(false)
                               document.body.style.overflow = 'auto';
                               setTimeout(() => {
-                                 const element = document.querySelector('#'+item);
+                                 const element = document.querySelector('#'+t(item));
                                  element?.scrollIntoView({
                                     behavior: 'smooth'
                                  })
                               }, 1000);
-                           }} to={'/#'+item}>{item}{item === 'Work' ? <span className='work-count'>{workCount}</span> : false}</Link>
+                           }} to={'/#'+t(item)}>{t(item)}{t(item) === 'Work' ? <span className='work-count'>{workCount}</span> : false}</Link>
                         }
                         </li> :
                      <li className='menu__item' key={i}>
-                        <button onClick={subMenuHandle} className={subMenu ? 'menu__link _active' : 'menu__link'} to={item}>
-                           <span>{item}</span>
+                        <button onClick={subMenuHandle} className={subMenu ? 'menu__link _active' : 'menu__link'} to={t(item)}>
+                           <span>{t(item)}</span>
                            <IoIosArrowUp style={{rotate: subMenu ? '180deg' : ''}}/>
                         </button>
                         <ul className='sub-menu'>
