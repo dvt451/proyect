@@ -167,7 +167,7 @@ export default function Header() {
                                                 behavior: 'smooth'
                                              })
                                        }}
-                                     className='sub-menu__link menu__link'>{item.title}</button>
+                                     className='sub-menu__link menu__link'>{t(item.title)}</button>
                                        :
                                        <Link
                                        to='/privacy'
@@ -181,7 +181,7 @@ export default function Header() {
                                              })
                                           }, 1000);
                                        }}
-                                  className='sub-menu__link menu__link'>{item.title}</Link>
+                                  className='sub-menu__link menu__link'>{t(item.title)}</Link>
                                     }</li>
                               })
                            }
