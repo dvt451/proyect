@@ -408,7 +408,6 @@
 			text-align: left;
 			@media (max-width: $tablet) {
 				padding-bottom: toRem(28);
-				border-bottom: toRem(1) solid #333;
 			}
 			.button {
 				@media (max-width: $tablet) {
@@ -477,6 +476,17 @@
 		width: 100%;
 		padding-top: percent(537, 675);
 		display: inline-block;
+		@extend %grayfilter;
+		.noise {
+			opacity: 0.1;
+			z-index: 1;
+			@media (max-width: $mobile) {
+				display: none;
+			}
+			&:hover {
+				opacity: 0;
+			}
+		}
 		video {
 			position: absolute;
 			width: 100%;
@@ -507,12 +517,12 @@
 	.out-block {
 		display: flex;
 		padding-left: calc((100% - toRem($containerWidth + 60 - ($containerPadding * 2))) / 2);
-		// .out-block__left
 
 		&__right {
 			width: calc(100% - toRem(30));
 			margin-left: toRem(30);
 			padding-bottom: percent(207, $containerWidth);
+			padding-left: toRem(1);
 		}
 	}
 }

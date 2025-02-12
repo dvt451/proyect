@@ -156,17 +156,19 @@ export default function Casestudies(props) {
 								<SwiperSlide key={i}>
 									<div className="casestudies__slide">
 										{item.mainVideo ?
-											<Link to={`/` + item.link} className="casestudies__image -ibg">
+											<Link to={`/` + item.link} onMouseEnter={() => { props.sishvr(true) }} onClick={() => { props.sishvr(false) }} onMouseLeave={() => { props.sishvr(false) }} className="casestudies__image -ibg">
+												<div className="noise"></div>
 												<video muted autoPlay playsInline loop src={item.mainVideo}></video>
 											</Link>
 											:
-											<Link to={`/` + item.link} className="casestudies__image -ibg">
+											<Link to={`/` + item.link} onMouseEnter={() => { props.sishvr(true) }} onClick={() => { props.sishvr(false) }} onMouseLeave={() => { props.sishvr(false) }} className="casestudies__image  -ibg">
+												<div className="noise"></div>
 												<img src={item.mainPicture} alt="Picture" />
 											</Link>
 										}
-										<Link to={`/` + item.link} className='casestudies__title'>
+										<h4 className='casestudies__title'>
 											{item.title}
-										</Link>
+										</h4>
 										<div className="casestudies__labels">
 											{
 												item.list.map((label, i) => {

@@ -1040,13 +1040,13 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 61.99875em) {
-  .home-blog-item__image, .works__link {
+  .home-blog-item__image, .works__link, .casestudies__image {
     transition: all 0.3s ease 0s;
     filter: grayscale(1);
   }
 }
 @media (min-width: 61.99875em) and (any-hover: hover) {
-  .home-blog-item__image:hover, .works__link:hover {
+  .home-blog-item__image:hover, .works__link:hover, .casestudies__image:hover {
     filter: grayscale(0);
   }
 }
@@ -3235,7 +3235,6 @@ body {
 @media (max-width: 61.99875em) {
   .casestudies .section-block__head {
     padding-bottom: 1.75rem;
-    border-bottom: 0.0625rem solid #333;
   }
 }
 @media (max-width: 61.99875em) {
@@ -3300,6 +3299,18 @@ body {
   padding-top: 79.5555555556%;
   display: inline-block;
 }
+.casestudies__image .noise {
+  opacity: 0.1;
+  z-index: 1;
+}
+@media (max-width: 47.99875em) {
+  .casestudies__image .noise {
+    display: none;
+  }
+}
+.casestudies__image .noise:hover {
+  opacity: 0;
+}
 .casestudies__image video {
   position: absolute;
   width: 100%;
@@ -3351,6 +3362,7 @@ body {
   width: calc(100% - 1.875rem);
   margin-left: 1.875rem;
   padding-bottom: 11.0106382979%;
+  padding-left: 0.0625rem;
 }
 
 .prices__head {
