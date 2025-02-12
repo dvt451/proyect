@@ -170,11 +170,13 @@ export default function Casestudies(props) {
 											{item.title}
 										</h4>
 										<div className="casestudies__labels">
-											{
-												item.list.map((label, i) => {
-													return <div key={i} className='label'>{label}</div>
-												})
-											}
+											<div className='casestudies__labels-wrapper'>
+												{
+													item.list.map((label, i) => {
+														return <div key={i} className='label'>{label}</div>
+													})
+												}
+											</div>
 										</div>
 									</div>
 								</SwiperSlide>

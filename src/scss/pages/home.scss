@@ -459,15 +459,16 @@
 	&__next {
 	}
 
+	.swiper-slide {
+		height: auto;
+	}
+
 	// .casestudies__slide
 
 	&__slide {
-		display: flex;
-		flex-direction: column;
 		height: 100%;
-	}
-	.swiper-slide {
-		height: auto;
+		display: grid;
+		grid-template-rows: auto 0.5fr 0.5fr;
 	}
 
 	// .casestudies__image
@@ -505,14 +506,18 @@
 		@include adaptiveValue("font-size", 24, 16);
 		line-height: normal;
 		padding: toRem(25) 0 toRem(27) 0;
-		height: 100%;
 	}
 
 	&__labels {
-		display: flex;
-		flex-wrap: wrap;
-		column-gap: toRem(24);
-		row-gap: toRem(15);
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: toRem(24);
+			row-gap: toRem(15);
+		}
+		.label {
+			display: inline;
+		}
 	}
 	.out-block {
 		display: flex;
