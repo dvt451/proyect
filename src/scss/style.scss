@@ -17,127 +17,124 @@
 @import url("https://fonts.googleapis.com/css?family=Questrial:regular&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap");
 
-
 //========================================================================================================================================================
 // Britanica
 @font-face {
-   font-family: 'Britanica-HeavySemiExpanded';
-   src: url('../fonts/britanica/Britanica\ Semi\ Expanded\ Heavy.ttf') format('truetype'); /* Format can be omitted in many cases */
-   font-style: normal;
+	font-family: "Britanica-HeavySemiExpanded";
+	src: url("../fonts/britanica/Britanica\ Semi\ Expanded\ Heavy.ttf") format("truetype"); /* Format can be omitted in many cases */
+	font-style: normal;
 }
 @font-face {
-   font-family: 'Britanica-BlackSemiExpended';
-   src: url('../fonts/britanica/Britanica\ Semi\ Expanded\ Black.ttf') format('truetype'); /* Format can be omitted in many cases */
-   font-style: normal;
+	font-family: "Britanica-BlackSemiExpended";
+	src: url("../fonts/britanica/Britanica\ Semi\ Expanded\ Black.ttf") format("truetype"); /* Format can be omitted in many cases */
+	font-style: normal;
 }
 //========================================================================================================================================================
 // Bandica
 @font-face {
-   font-family: 'Bandica';
-   src: url('../fonts/bandica/BandicaPersonalUse-Regular.otf') format('truetype'); /* Format can be omitted in many cases */
-   font-style: normal;
+	font-family: "Bandica";
+	src: url("../fonts/bandica/BandicaPersonalUse-Regular.otf") format("truetype"); /* Format can be omitted in many cases */
+	font-style: normal;
 }
 //========================================================================================================================================================
 // SF Pro Text Regular
 @font-face {
-   font-family: 'SF Pro Text Regular';
-   src: url('../fonts/sfpro/SF-Pro-Text-Regular.otf') format('opentype');
-   font-style: normal;
+	font-family: "SF Pro Text Regular";
+	src: url("../fonts/sfpro/SF-Pro-Text-Regular.otf") format("opentype");
+	font-style: normal;
 }
 // SF Pro Text Semibold
 @font-face {
-   font-family: 'SF Pro Text Semibold';
-   src: url('../fonts/sfpro/SF-Pro-Text-Semibold.otf') format('opentype');
-   font-style: normal;
+	font-family: "SF Pro Text Semibold";
+	src: url("../fonts/sfpro/SF-Pro-Text-Semibold.otf") format("opentype");
+	font-style: normal;
 }
 // SF Pro Text Heavy
 @font-face {
-   font-family: 'SF Pro Text Heavy';
-   src: url('../fonts/sfpro/SF-Pro-Text-Heavy.otf') format('opentype');
-   font-style: normal;
+	font-family: "SF Pro Text Heavy";
+	src: url("../fonts/sfpro/SF-Pro-Text-Heavy.otf") format("opentype");
+	font-style: normal;
 }
 // SF Pro Medium = 500
 @font-face {
-   font-family: 'SF Pro Medium';
-   src: url('../fonts/sfpro/SF-Pro.ttf') format('truetype');
-   font-weight: 500;
-   font-style: normal;
+	font-family: "SF Pro Medium";
+	src: url("../fonts/sfpro/SF-Pro.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
 }
 // SF Pro Regular = 400
 @font-face {
-   font-family: 'SF Pro Regular';
-   src: url('../fonts/sfpro/SF-Pro.ttf') format('truetype');
-   font-weight: 400;
-   font-style: normal;
+	font-family: "SF Pro Regular";
+	src: url("../fonts/sfpro/SF-Pro.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
 }
 
 //========================================================================================================================================================
 // Helvetica
 @font-face {
-   font-family: 'HelveticaNeueBold';
-   src: url('../fonts/helvetica/HelveticaNeueBold.otf') format('opentype');
-   font-style: normal;
+	font-family: "HelveticaNeueBold";
+	src: url("../fonts/helvetica/HelveticaNeueBold.otf") format("opentype");
+	font-style: normal;
 }
 
 /* site settings */
-:root{
-   
-// Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
---font-family: 'Poppins';
---font-wieght: 400;
---ffBritanicaHeavySemiExpanded: 'Britanica-HeavySemiExpanded';
---ffSFProMedium: 'SF Pro Medium';
---ffSFProRegular: 'SF Pro Regular';
---ffSFProTextSemibold: 'SF Pro Text Semibold';
---ffSFProTextRegular: 'SF Pro Text Regular';
---ffSFProTextHeavy: 'SF Pro Text Heavy';
---ffBandica: 'Bandica';
---ffBritanica-BlackSemiExpended: 'Britanica-BlackSemiExpended'
---ffHelveticaNeueBold: 'HelveticaNeueBold';
+:root {
+	// Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
+	--font-family: "Poppins";
+	--font-wieght: 400;
+	--ffBritanicaHeavySemiExpanded: "Britanica-HeavySemiExpanded";
+	--ffSFProMedium: "SF Pro Medium";
+	--ffSFProRegular: "SF Pro Regular";
+	--ffSFProTextSemibold: "SF Pro Text Semibold";
+	--ffSFProTextRegular: "SF Pro Text Regular";
+	--ffSFProTextHeavy: "SF Pro Text Heavy";
+	--ffBandica: "Bandica";
+	--ffBritanica-BlackSemiExpended: "Britanica-BlackSemiExpended" --ffHelveticaNeueBold: "HelveticaNeueBold";
 
---font-size: 1; // где 16(px) - размер шрифта по умолчанию
+	--font-size: 1; // где 16(px) - размер шрифта по умолчанию
 
-// Default colors
---main-color: #fff;
---colBlack: #0D0D0D;
---colYellow: #D5FF63;
---scrollbar-thumb-color: #D5FF63;
+	// Default colors
+	--main-color: #fff;
+	--colBlack: #0d0d0d;
+	--colYellow: #d5ff63;
+	--scrollbar-thumb-color: #d5ff63;
 }
 ::-webkit-scrollbar-thumb {
-   background-color: var(--sectionColor);
- }
- ::selection{
-   background-color: var(--sectionColor);
-   color: #000;
+	background-color: var(--sectionColor);
 }
- .usecases-header__logo{
-   &:hover{
-      path{
-         fill: var(--sectionColor);
-      }
-   }
+::selection {
+	background-color: var(--sectionColor);
+	color: #000;
 }
-.flair{
-   border: toRem(1) solid var(--sectionColor);
-   &::before{
-      background-color: var(--sectionColor);
-   }
-   span{
-      color: var(--sectionColor);
-   }
+.usecases-header__logo {
+	&:hover {
+		path {
+			fill: var(--sectionColor);
+		}
+	}
 }
-.letstalk-link{
-   @media (any-hover: hover){
-      &:hover{
-         border-color: var(--sectionColor);
-      }
-   }
-   &__dott{
-      background-color: var(--sectionColor);
-      &::before{
-         background-color: var(--sectionColor);
-      }
-   }
+.flair {
+	border: toRem(1) solid var(--sectionColor);
+	&::before {
+		background-color: var(--sectionColor);
+	}
+	span {
+		color: var(--sectionColor);
+	}
+}
+.letstalk-link {
+	@media (any-hover: hover) {
+		&:hover {
+			border-color: var(--sectionColor);
+		}
+	}
+	&__dott {
+		background-color: var(--sectionColor);
+		&::before {
+			background-color: var(--sectionColor);
+		}
+	}
 }
 
 // Настройки адаптивной сетки ===============================================================================================================================================================================================================================================================================================
@@ -154,7 +151,7 @@ $containerPdd: $containerPadding + 1px;
 $containerWidth: $maxWidthContainer + $containerPadding * 2;
 
 // Брейк-поинты
-$pc: em($containerWidth);  // ПК, ноутбуки, некоторые планшети в горизонтальном положении
+$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшети в горизонтальном положении
 $tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
 $mobile: em(767.98); // Телефоны L
 $mobileSmall: em(479.98); // Телефоны S
@@ -164,7 +161,6 @@ $mobileSmall: em(479.98); // Телефоны S
 
 // Обнулення ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
 @import "base/null";
-
 
 // Оболочка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 // Приклепляет footer к снизу
@@ -186,7 +182,7 @@ $mobileSmall: em(479.98); // Телефоны S
 Снипет (HTML): cnt
 */
 
-[class*="__container"]{
+[class*="__container"] {
 	max-width: toRem($containerWidth);
 	margin: 0 auto;
 	padding: 0 toRem($containerPadding);
@@ -197,8 +193,8 @@ $mobileSmall: em(479.98); // Телефоны S
 
 // Подключение стилей общих элементов проекта
 @import "common";
-body{
-   background-color: #000;
+body {
+	background-color: #000;
 }
 @import "header";
 @import "footer";
@@ -212,10 +208,10 @@ body{
 @import "pages/usecases/venom";
 @import "pages/usecases/zume";
 @import "pages/privacy";
-@import "test";
-@import 'libs/verticalScroll';
+@import "libs/verticalScroll";
 @import "pages/blog";
 @import "pages/usecases/t3lab";
 @import "pages/usecases/pixelbros";
 @import "pages/usecases/notelix";
 @import "pages/usecases/voltix";
+@import "test";
