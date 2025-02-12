@@ -1139,10 +1139,13 @@ main {
     font-size: 5.5rem;
   }
 }
-.loading-screen .counter-1, .loading-screen .counter-2, .loading-screen .counter-3 {
+.loading-screen .counter-1,
+.loading-screen .counter-2,
+.loading-screen .counter-3 {
   position: relative;
 }
-.loading-screen .counter-2, .loading-screen .counter-3 {
+.loading-screen .counter-2,
+.loading-screen .counter-3 {
   margin-left: -0.625rem;
 }
 .loading-screen .num1offset1 {
@@ -1628,7 +1631,7 @@ main {
 
 .letstalk-link {
   border-radius: 6.25rem;
-  border: 0.0625rem solid #D9D9D9;
+  border: 0.0625rem solid #d9d9d9;
   padding: 0.875rem 2.1875rem;
   display: flex;
   align-items: center;
@@ -3303,7 +3306,7 @@ body {
   opacity: 0.1;
   z-index: 1;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 61.99875em) {
   .casestudies__image .noise {
     display: none;
   }
