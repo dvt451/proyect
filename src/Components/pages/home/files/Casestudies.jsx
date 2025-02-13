@@ -102,7 +102,9 @@ export default function Casestudies(props) {
 				<div className='section-block__container'>
 					<div className="section-block">
 						<div className="section-block__head"></div>
-						<div className="section-block__body"></div>
+						<div className="section-block__body">
+							<div className="section-block__col"></div>
+						</div>
 					</div>
 				</div>
 			</div>
