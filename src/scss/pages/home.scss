@@ -780,15 +780,28 @@
 	// .prices-options__column
 
 	&__column {
-		&:not(:first-child) {
-			border-left: toRem(1) solid #333;
+		@media (min-width: $tablet) {
+			&:not(:first-child) {
+				border-left: toRem(1) solid #333;
+			}
 		}
+
 		@media (max-width: $tablet) {
 			&:nth-child(1),
 			&:nth-child(2) {
 				border-bottom: toRem(1) solid #333;
 			}
+			&:nth-child(even) {
+				border-left: toRem(1) solid #333;
+			}
 		}
+		@media (max-width: $mobileSmall) {
+			&:nth-child(3) {
+				border-bottom: toRem(1) solid #333;
+			}
+			border-left: none !important;
+		}
+
 		@include adaptiveValue("padding-block", 120, 24, $containerWidth, 393);
 		// @include adaptiveValue("padding-inline", 58, 11, $containerWidth, 393);
 		padding-inline: toRem(21);
