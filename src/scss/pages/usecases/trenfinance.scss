@@ -1,0 +1,74 @@
+.usecases{
+   video{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+   }
+}
+.trenfinance{
+   .usecases__video_1{
+      max-height: toRem(1035);
+      height: toVW(1035);
+   }
+   .usecases-head {
+      // background: url('../img/usecases/trenfinance/head.webp') center / cover no-repeat;
+   }
+   .trenfinance-head-title{
+      background: url('../img/usecases/trenfinance/trnlogo.webp') center / cover no-repeat;
+      @include adaptiveValue("width", 344, 211,$containerWidth,393);
+      @include adaptiveValue("height", 40, 24,$containerWidth,393);
+   }
+   .progress-bar__filled{
+      background-image: linear-gradient(to right, #67DAB1,#67DAB1);
+   }
+   .trenfinance-head-title{
+      display: none;
+   }
+   .usecases-text-content {
+      &__text{
+         span{
+            color: #67DAB1;
+         }
+      }
+   }
+   .usecases-image {
+      &_1{
+         background-image: url('../img/usecases/trenfinance/picture1.webp');
+      }
+      &_3{
+         background-image: url('../img/usecases/trenfinance/picture3.webp');
+         @include adaptiveValue("height", 786, 100,$containerWidth,320);
+      }
+      &_2{
+         background-image: url('../img/usecases/trenfinance/picture2.webp');
+      }
+      &_6{
+         background-image: url('../img/usecases/trenfinance/picture6.webp');
+      }
+      &_7{
+         max-height: toRem(998);
+         height: toVW(998);
+      }
+      &_8{
+         max-height: toRem(1148);
+         height: toVW(1148);
+      }
+      &_9{
+         max-height: toRem(941);
+         height: toVW(941);
+      }
+      &_10{
+         max-height: toRem(986);
+         height: toVW(986);
+      }
+   }
+   .usecases-pair__column_3{
+      background: url('../img/usecases/trenfinance/image3.webp') center / cover no-repeat;
+   }
+   .usecases-pair__column_4{
+      background: url('../img/usecases/trenfinance/image4.webp') center / cover no-repeat;
+   }
+}

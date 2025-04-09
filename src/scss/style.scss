@@ -1,0 +1,218 @@
+@use "sass:math";
+
+@import "base/mixins.scss";
+
+// Подключение шрифтов ===========================================================================================================================================================================================================================================================================
+// &display=swap - добавить при подключении через плагин
+// @import "base/fonts.scss";
+
+// Montserrat
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Michroma:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Unbounded:200,300,regular,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Questrial:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap");
+
+//========================================================================================================================================================
+// Britanica
+@font-face {
+	font-family: "Britanica-HeavySemiExpanded";
+	src: url("../fonts/britanica/Britanica\ Semi\ Expanded\ Heavy.ttf") format("truetype"); /* Format can be omitted in many cases */
+	font-style: normal;
+}
+@font-face {
+	font-family: "Britanica-BlackSemiExpended";
+	src: url("../fonts/britanica/Britanica\ Semi\ Expanded\ Black.ttf") format("truetype"); /* Format can be omitted in many cases */
+	font-style: normal;
+}
+//========================================================================================================================================================
+// Bandica
+@font-face {
+	font-family: "Bandica";
+	src: url("../fonts/bandica/BandicaPersonalUse-Regular.otf") format("truetype"); /* Format can be omitted in many cases */
+	font-style: normal;
+}
+//========================================================================================================================================================
+// SF Pro Text Regular
+@font-face {
+	font-family: "SF Pro Text Regular";
+	src: url("../fonts/sfpro/SF-Pro-Text-Regular.otf") format("opentype");
+	font-style: normal;
+}
+// SF Pro Text Semibold
+@font-face {
+	font-family: "SF Pro Text Semibold";
+	src: url("../fonts/sfpro/SF-Pro-Text-Semibold.otf") format("opentype");
+	font-style: normal;
+}
+// SF Pro Text Heavy
+@font-face {
+	font-family: "SF Pro Text Heavy";
+	src: url("../fonts/sfpro/SF-Pro-Text-Heavy.otf") format("opentype");
+	font-style: normal;
+}
+// SF Pro Medium = 500
+@font-face {
+	font-family: "SF Pro Medium";
+	src: url("../fonts/sfpro/SF-Pro.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+// SF Pro Regular = 400
+@font-face {
+	font-family: "SF Pro Regular";
+	src: url("../fonts/sfpro/SF-Pro.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+//========================================================================================================================================================
+// Helvetica
+@font-face {
+	font-family: "HelveticaNeueBold";
+	src: url("../fonts/helvetica/HelveticaNeueBold.otf") format("opentype");
+	font-style: normal;
+}
+
+/* site settings */
+:root {
+	// Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
+	--font-family: "Poppins";
+	--font-wieght: 400;
+	--ffBritanicaHeavySemiExpanded: "Britanica-HeavySemiExpanded";
+	--ffSFProMedium: "SF Pro Medium";
+	--ffSFProRegular: "SF Pro Regular";
+	--ffSFProTextSemibold: "SF Pro Text Semibold";
+	--ffSFProTextRegular: "SF Pro Text Regular";
+	--ffSFProTextHeavy: "SF Pro Text Heavy";
+	--ffBandica: "Bandica";
+	--ffBritanica-BlackSemiExpended: "Britanica-BlackSemiExpended" --ffHelveticaNeueBold: "HelveticaNeueBold";
+
+	--font-size: 1; // где 16(px) - размер шрифта по умолчанию
+
+	// Default colors
+	--main-color: #fff;
+	--colBlack: #0d0d0d;
+	--colYellow: #d5ff63;
+	--scrollbar-thumb-color: #d5ff63;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--sectionColor);
+}
+::selection {
+	background-color: var(--sectionColor);
+	color: #000;
+}
+.usecases-header__logo {
+	&:hover {
+		path {
+			fill: var(--sectionColor);
+		}
+	}
+}
+.flair {
+	border: toRem(1) solid var(--sectionColor);
+	&::before {
+		background-color: var(--sectionColor);
+	}
+	span {
+		color: var(--sectionColor);
+	}
+}
+.letstalk-link {
+	@media (any-hover: hover) {
+		&:hover {
+			border-color: var(--sectionColor);
+		}
+	}
+	&__dott {
+		background-color: var(--sectionColor);
+		&::before {
+			background-color: var(--sectionColor);
+		}
+	}
+}
+
+// Настройки адаптивной сетки ===============================================================================================================================================================================================================================================================================================
+$maxWidth: 1920;
+$minWidth: 320;
+// Ширина ограничивающего контейнера
+$maxWidthContainer: 1820;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 30;
+$containerPdd: $containerPadding + 1px;
+
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding * 2;
+
+// Брейк-поинты
+$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшети в горизонтальном положении
+$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: em(767.98); // Телефоны L
+$mobileSmall: em(479.98); // Телефоны S
+
+// ============================================================================================================================================================================================================================================================================================================================================================================================
+// ============================================================================================================================================================================================================================================================================================================================================================================================
+
+// Обнулення ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
+@import "base/null";
+
+// Оболочка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+// Приклепляет footer к снизу
+// .wrapper {
+// 	min-height: 100vh;
+// 	display: flex;
+// 	flex-direction: column;
+// 	overflow: hidden;
+// 	// Прижимаем footer
+// 	> main {
+// 		flex: 1 1 auto;
+// 	}
+// }
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+
+[class*="__container"] {
+	max-width: toRem($containerWidth);
+	margin: 0 auto;
+	padding: 0 toRem($containerPadding);
+}
+
+// Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
+@import "base";
+
+// Подключение стилей общих элементов проекта
+@import "common";
+body {
+	background-color: #000;
+}
+@import "header";
+@import "footer";
+@import "nopage";
+//========================================================================================================================================================
+// Pages
+@import "pages/home";
+@import "pages/usecases/usecases";
+@import "pages/usecases/trenfinance";
+@import "pages/usecases/hetrix";
+@import "pages/usecases/venom";
+@import "pages/usecases/zume";
+@import "pages/privacy";
+@import "libs/verticalScroll";
+@import "pages/blog";
+@import "pages/usecases/t3lab";
+@import "pages/usecases/pixelbros";
+@import "pages/usecases/notelix";
+@import "pages/usecases/voltix";
+@import "pages/confirmation";
+@import "test";
