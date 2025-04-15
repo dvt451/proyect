@@ -7,7 +7,7 @@ import Media from '../General/Media';
 import Letstalk from '../General/Letstalk';
 import { useTranslation } from 'react-i18next';
 
-export default function Header() {
+export default function Header({ LetstalkText }) {
 	const { t } = useTranslation();
 	const [burgerActive, setBurgerActive] = useState(false)
 	const [subMenu, setSubMenu] = useState(false)
@@ -81,7 +81,7 @@ export default function Header() {
 						</button>
 
 					}
-					<Letstalk />
+					<Letstalk LetstalkText={LetstalkText} />
 					<button onClick={!burgerActive ? burgerHandleTrue : burgerHandleFalse} type="button" className={burgerActive ? 'burger__icon icon-burger menu-open' : 'burger__icon icon-burger'}><span></span></button>
 				</div>
 			</div>

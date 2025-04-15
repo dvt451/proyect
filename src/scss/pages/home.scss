@@ -85,8 +85,7 @@
 		// @include adaptiveValue("margin-bottom", 127, 40,$containerWidth,393);
 		margin-bottom: toRem(27);
 	}
-	mark,
-	a {
+	mark {
 		color: var(--colYellow);
 		background-color: transparent;
 	}
@@ -570,8 +569,9 @@
 		display: flex;
 		flex-direction: column;
 		@media (min-width: $tablet) {
-			&:not(:last-child) {
-				border-right: toRem(1) solid #333;
+			border-left: toRem(1) solid #333;
+			&:nth-child(1) {
+				border-left: none;
 			}
 			border-top: toRem(1) solid #333;
 		}
@@ -763,29 +763,67 @@
 	}
 }
 .prices-options {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	border: toRem(1) solid #333;
-	@media (max-width: $tablet) {
-		grid-template-columns: 1fr 1fr;
+	&__container {
 	}
-	@media (max-width: $mobileSmall) {
-		grid-template-columns: 1fr;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		border: toRem(1) solid #333;
+		@media (max-width: $tablet) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: 1fr;
+		}
 	}
 	// .prices-options__column
 
 	&__column {
-		&:not(:first-child) {
-			border-left: toRem(1) solid #333;
+		@media (min-width: $tablet) {
+			&:not(:first-child) {
+				border-left: toRem(1) solid #333;
+			}
 		}
+
 		@media (max-width: $tablet) {
 			&:nth-child(1),
 			&:nth-child(2) {
 				border-bottom: toRem(1) solid #333;
 			}
+			&:nth-child(even) {
+				border-left: toRem(1) solid #333;
+			}
 		}
+		@media (max-width: $mobileSmall) {
+			&:nth-child(3) {
+				border-bottom: toRem(1) solid #333;
+			}
+			border-left: none !important;
+		}
+
 		@include adaptiveValue("padding-block", 120, 24, $containerWidth, 393);
-		@include adaptiveValue("padding-inline", 58, 11, $containerWidth, 393);
+		// @include adaptiveValue("padding-inline", 58, 11, $containerWidth, 393);
+		padding-right: toRem(21);
+		display: flex;
+		flex-direction: column;
+	}
+	&__head {
+		display: flex;
+	}
+
+	&__icon {
+		img {
+			width: toRem(75);
+			@media (max-width: $mobile) {
+				width: toRem(55);
+			}
+		}
+		align-self: center;
+	}
+
+	.title-sub-2 {
+		align-self: center;
 	}
 
 	// .prices-options__text
@@ -796,7 +834,10 @@
 		@include adaptiveValue("font-size", 18, 16, $containerWidth, 393);
 		font-weight: 400;
 		line-height: normal;
-		padding-top: toRem(21);
+		padding-left: toRem(75);
+		@media (max-width: $mobile) {
+			padding-left: toRem(55);
+		}
 	}
 }
 //========================================================================================================================================================
