@@ -36,19 +36,7 @@ export default function Head(props) {
 					<img src={ConfirmedIcon} alt="icon" />
 				</i>
 				<h1 className="head__title">Booking <mark>
-					<Typewriter
-						words={[
-							'Confirmed!',
-							'Confirmed!',
-							'Confirmed!',
-						]}
-						loop={true}
-						cursor
-						cursorStyle='|'
-						typeSpeed={300}
-						deleteSpeed={100}
-						delaySpeed={1000}
-					/>
+					Confirmed!
 				</mark></h1>
 				<p className="head__text">
 					You’ve officially taken the first step to unlock the full potential of your business. We’re excited to dive in and bring your vision to life. Get ready for something amazing. Talk soon :)
