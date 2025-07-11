@@ -1,0 +1,52 @@
+
+.fls-cursor {
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    pointer-events: none;
+    mix-blend-mode: exclusion;
+    z-index: 99999;
+	&__shadow {
+      will-change: transform;
+      width: 36px;
+      height: 36px;
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      transition: all 0.15s ease;
+		&::after {
+			content: "";
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    border: 2px solid #fff;
+    box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.3s ease;
+		}
+	}
+	&__pointer {
+		
+	}
+	&._hover {
+		.fls-cursor__shadow::after {
+			transform: scale(2);
+         background-color: #fff;
+		}
+		.fls-cursor__shadow::after {
+      }
+	}
+	&._active {
+		.fls-cursor__shadow::after {
+			transition: all 0.05s ease 0s;
+			transform: scale(0.3);
+		}
+		.fls-cursor__shadow::after {
+		}
+	}
+}

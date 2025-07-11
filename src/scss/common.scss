@@ -1,0 +1,375 @@
+// Заголовки, загальні БЕМ блоки та інше...
+main {
+	background-color: var(--colBlack);
+}
+::-webkit-scrollbar {
+	width: toRem(10);
+}
+::-webkit-scrollbar-thumb {
+	width: toRem(10);
+	border-radius: toRem(50);
+}
+//========================================================================================================================================================
+.loading-screen {
+	position: fixed;
+	width: 100%;
+	height: 100dvh;
+	top: 0;
+	left: 0;
+	z-index: 3000;
+	background-color: var(--colYellow);
+	&__content {
+		position: absolute;
+		left: toRem(0);
+		bottom: toRem(30);
+		padding: toRem(47) toRem(50);
+	}
+	&__text {
+		color: #000;
+		font-family: "Unbounded";
+		font-size: 24px;
+		@include adaptiveValue("font-size", 24, 16, $containerWidth, 393);
+		line-height: normal;
+		padding-left: toRem(10);
+		padding-bottom: toRem(10);
+		opacity: 0.5;
+	}
+	.counter {
+		display: flex;
+		height: toRem(100);
+		@include adaptiveValue("font-size", 136, 88, $containerWidth, 393);
+		line-height: toRem(156);
+		// line-height: normal;
+		clip-path: polygon(0 0, 100% 0, 100% toRem(136), 0 toRem(136));
+		color: var(--colBlack);
+	}
+	.counter-1,
+	.counter-2,
+	.counter-3 {
+		position: relative;
+	}
+	.counter-2,
+	.counter-3 {
+		margin-left: toRem(-10);
+	}
+	.num1offset1 {
+		position: relative;
+		right: toRem(-25);
+	}
+	.num1offset2 {
+		position: relative;
+		right: toRem(-10);
+	}
+	.num {
+		color: #000;
+		// line-height: normal;
+	}
+	.digit {
+	}
+}
+
+//========================================================================================================================================================
+
+.section-title {
+	color: var(--colYellow);
+	font-family: "Unbounded";
+	@include adaptiveValue("font-size", 70, 24, $containerWidth, 393);
+	span {
+		display: inline-block;
+	}
+	transition: all 0.3s;
+}
+.title-sub-1 {
+	font-family: "Unbounded";
+	font-weight: 500;
+	@include adaptiveValue("font-size", 40, 18, $containerWidth, 393);
+}
+.title-sub-2 {
+	font-family: "Unbounded";
+	font-weight: 400;
+	@include adaptiveValue("font-size", 32, 16, $containerWidth, 393);
+}
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	gap: toRem(24);
+	@include adaptiveValue("padding-top", 12, 8, $containerWidth, 393);
+	@include adaptiveValue("padding-bottom", 12, 8, $containerWidth, 393);
+	@include adaptiveValue("padding-right", 21, 15, $containerWidth, 393);
+	@include adaptiveValue("padding-left", 32, 25, $containerWidth, 393);
+	background-color: var(--colYellow);
+	border-radius: toRem(100);
+	@media (any-hover: hover) {
+		&:hover {
+			svg {
+				rotate: 45deg;
+			}
+		}
+	}
+	&__text {
+		color: #000;
+		font-family: "Poppins";
+		@include adaptiveValue("font-size", 24, 16, $containerWidth, 393);
+	}
+	&__icon {
+		display: inline-block;
+		@include adaptiveValue("flex-basis", 69, 50, $containerWidth, 393);
+		@include adaptiveValue("width", 69, 50, $containerWidth, 393);
+		@include adaptiveValue("height", 69, 50, $containerWidth, 393);
+		flex-shrink: 0;
+		background-color: #141414;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		position: relative;
+		transition: all 0.3s;
+		font-size: toRem(25);
+		@include adaptiveValue("font-size", 30, 25, $containerWidth, 991);
+		rotate: -45deg;
+		color: var(--colYellow);
+		svg {
+			transition: all 0.3s;
+		}
+	}
+}
+
+.label {
+	color: #fff;
+	@include adaptiveValue("padding-block", 12, 6, $containerWidth, 393);
+	@include adaptiveValue("padding-inline", 16, 8, $containerWidth, 393);
+	border: 1px solid;
+	opacity: 0.6;
+	display: inline-block;
+	border-radius: toRem(100);
+	@include adaptiveValue("font-size", 16, 14, $containerWidth, 393);
+	line-height: normal;
+}
+.link {
+	display: inline-flex;
+	align-items: center;
+	gap: toRem(6);
+	white-space: nowrap;
+	font-size: toRem(18);
+	color: var(--colYellow);
+	transition: all 0.2s;
+	@media (any-hover: hover) {
+		&:hover {
+			svg {
+				transform: translateX(toRem(8));
+			}
+		}
+	}
+	svg {
+		transition: all 0.3s;
+	}
+	&__text {
+	}
+}
+
+.section-block {
+	display: flex;
+	border-inline: toRem(1) solid #333;
+	padding-top: toRem(185);
+	@media (max-width: $tablet) {
+		flex-direction: column;
+	}
+	.section-title {
+		padding-bottom: toRem(32);
+	}
+	// .section-block__head
+
+	&__head {
+		@media (min-width: $tablet) {
+			@include adaptiveValue("flex-basis", 455, 100);
+			flex-shrink: 0;
+			padding-top: toRem(30);
+			text-align: left;
+		}
+		padding-inline: toRem(20);
+		text-align: center;
+	}
+
+	// .section-block__body
+
+	&__body {
+		border: 1px solid #333;
+	}
+
+	// .section-block__button
+
+	&__button {
+		@media (min-width: $tablet) {
+			display: none;
+		}
+		margin-block: toRem(24);
+		justify-content: center;
+		padding-inline: toRem(24);
+		font-weight: 600;
+	}
+}
+.letstalk-link {
+	border-radius: toRem(100);
+	border: toRem(1) solid #d9d9d9;
+	padding: toRem(14) toRem(35);
+	display: flex;
+	align-items: center;
+	gap: toRem(10);
+
+	&__dott {
+		width: toRem(8);
+		height: toRem(8);
+		position: relative;
+		border-radius: 50%;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			animation: shining 1s infinite;
+		}
+	}
+}
+@keyframes shining {
+	100% {
+		opacity: 0;
+		scale: 3;
+	}
+}
+.progress-bar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: toRem(3);
+	z-index: 20;
+	&__filled {
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(to right, var(--colYellow), var(--colYellow));
+	}
+}
+
+//========================================================================================================================================================
+
+.flair {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: toRem(32);
+	height: toRem(32);
+	border-radius: 50%;
+	pointer-events: none;
+	mix-blend-mode: difference;
+	z-index: 11;
+	transform: translate(-50%, -50%);
+	transition:
+		width 0.3s,
+		height 0.3s,
+		background-color 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	@media (max-width: $tablet) {
+		display: none;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		top: 0;
+		left: 0;
+		transform: translate(50%, 50%);
+		border-radius: 50%;
+	}
+	span {
+		scale: 0;
+		transition: all 0.3s;
+		position: absolute;
+		z-index: 10;
+		text-align: center;
+		font-family: "Unbounded";
+		text-transform: uppercase;
+	}
+	&.active {
+		width: toRem(132);
+		height: toRem(132);
+		background-color: transparent;
+		&::before {
+			scale: 0;
+		}
+		span {
+			scale: 1;
+		}
+	}
+}
+
+.privacy-title {
+	font-family: "Unbounded";
+	// @include adaptiveValue("font-size", 40, 18,$containerWidth,393);
+	@include adaptiveValue("font-size", 28, 18, $containerWidth, 393);
+	font-weight: 500;
+	line-height: normal;
+	@include adaptiveValue("padding-bottom", 20, 16, $containerWidth, 393);
+}
+.privacy-title-1 {
+	@include adaptiveValue("font-size", 40, 20, $containerWidth, 393);
+}
+.privacy-title-3 {
+	@include adaptiveValue("font-size", 32, 18, $containerWidth, 393);
+	font-weight: 400;
+	line-height: normal;
+	@include adaptiveValue("padding-bottom", 18, 16, $containerWidth, 393);
+}
+.privacy-text {
+	@include adaptiveValue("font-size", 18, 16, $containerWidth, 393);
+	font-weight: 300;
+	line-height: normal;
+	a {
+		color: var(--colYellow);
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.noise {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/noise.gif);
+	opacity: 0.02;
+	transition: all 0.3s;
+}
+#canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+}
+video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	pointer-events: none;
+}
+#awwwards {
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}

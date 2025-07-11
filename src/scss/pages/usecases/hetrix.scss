@@ -1,0 +1,211 @@
+.hetrix{
+   .usecases-head__text{
+      color: #FFF9D8;
+      @include adaptiveValue("font-size", 72, 35,$containerWidth,393);
+   }  
+
+   .usecases-head {
+      background: url('../img/usecases/hetrix/head.webp') center / cover no-repeat;
+      &__title{
+      }
+   }
+   .usecases-head__icon{
+      @include adaptiveValue("width", 102, 50,$containerWidth,393);
+      position: relative;
+      path{
+         fill: #FFF9D8;
+      }
+   }
+   .progress-bar__filled{
+      background-image: linear-gradient(to right, #FF2F01,#FF2F01);
+   }
+   .usecases-text-content {
+      &__text{
+         max-width: toRem(1282);
+         span{
+            color: #FF2F01;
+         }
+      }
+   }
+   .usecases-pair__column_9{
+      background: url('../img/usecases/hetrix/image9.webp') center / cover no-repeat;
+   }
+   .usecases-pair__column_10{
+      background: url('../img/usecases/hetrix/image10.webp') center / cover no-repeat;
+   }
+   .usecases-image {
+      &_1{
+         background-image: url('../img/usecases/hetrix/image1.webp');
+         @include adaptiveValue("height", 1148, 258,$containerWidth,393);
+      }
+      &_3{
+         background-image: url('../img/usecases/hetrix/image2.webp');
+      }
+      &_2{
+         background-image: url('../img/usecases/hetrix/image5.webp');
+      }
+      &_6{
+         background-image: url('../img/usecases/hetrix/image14.webp');
+      }
+      &_7{
+         background-image: url('../img/usecases/hetrix/image3.webp');
+      }
+      &_8{
+         background-image: url('../img/usecases/hetrix/image4.webp');
+         @include adaptiveValue("height", 960, 220,$containerWidth,393);
+      }
+      &_9{
+         background-image: url('../img/usecases/hetrix/image8.webp');
+         @include adaptiveValue("height", 786, 323,$containerWidth,393);
+      }
+      &_10{
+         background-image: url('../img/usecases/hetrix/image11.webp');
+         @include adaptiveValue("height", 936, 288,$containerWidth,393);
+      }
+   }
+   .usecases-pair__column_3{
+      background: url('../img/usecases/hetrix/image7.webp') center / cover no-repeat;
+   }
+   .usecases-pair__column_4{
+      background: url('../img/usecases/hetrix/image6.webp') center / cover no-repeat;
+   }
+   .usecases-pair__column_11{
+      background: url('../img/usecases/hetrix/image13.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 986, 400,$containerWidth,767);
+      @media (max-width:$mobile){
+         @include adaptiveValue("height", 700, 400,767,393); 
+      }
+   }
+   .usecases-pair__column_12{
+      background: url('../img/usecases/hetrix/image12.webp') center / cover no-repeat;
+      @include adaptiveValue("height", 986, 400,$containerWidth,767);
+      @media (max-width:$mobile){
+         @include adaptiveValue("height", 700, 400,767,393); 
+      }
+   }
+
+}
+
+//========================================================================================================================================================
+.hetrix-font {
+
+   &__container{
+      display: flex;
+      flex-direction: column;
+      @media (max-width:$tablet){
+         padding: 0;
+      }
+   }
+
+   // .hetrix-font__row
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      &:first-child{
+         @include adaptiveValue("padding-inline", 74, 0,$containerWidth,393);
+         @include adaptiveValue("padding-top", 62, 32,$containerWidth,393);
+         @include adaptiveValue("padding-bottom", 224, 32,$containerWidth,393);
+      }
+      &:last-child{
+         @include adaptiveValue("padding-bottom", 86, 32,$containerWidth,393);
+         @media (max-width:$tablet){
+            flex-direction: column;
+            gap: toRem(34);
+         }
+      }
+      align-items: center;
+      background-color: #D9D9D9;
+   }
+
+   // .hetrix-font__column
+
+   &__column {
+   }
+
+   // .hetrix-font__txt
+
+   &__txt {
+      color: #090909;
+      font-family: 'Michroma';
+      @include adaptiveValue("font-size", 36, 18,$containerWidth,393);
+      line-height: normal;
+      letter-spacing: toRem(0.72);
+   }
+
+   // .hetrix-font__letter
+
+   &__letter {
+      font-family: 'Michroma';
+      @include adaptiveValue("font-size", 445, 152,$containerWidth,393);
+      color: #000;
+      @media (min-width:$tablet){
+         transform: translateX(toRem(-120));
+      }
+      // margin-left: toRem(-120);
+   }
+
+   // .hetrix-font__title
+
+   &__title {
+      color: #090909;
+      font-family: 'Michroma';
+      font-size: 68.36px;
+      @include adaptiveValue("font-size", 68, 18,$containerWidth,393);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: toRem(1.367);
+      @include adaptiveValue("margin-bottom", 15, 8,$containerWidth,393);
+      @media (max-width:$mobile){
+         letter-spacing: toRem(0.36); 
+      }
+   }
+
+   // .hetrix-font__sub-title
+
+   &__sub-title {
+      color: #FF2F01;
+      font-family: 'Michroma';
+      font-size: 43.066px;
+      @include adaptiveValue("font-size", 43, 18,$containerWidth,393);
+      letter-spacing: toRem(0.861);
+      @media (max-width:$mobile){
+         letter-spacing: toRem(0.36); 
+      }
+   }
+
+   // .hetrix-font__letters
+
+   &__letters {
+      color: #090909;
+      font-family: 'Michroma';
+      font-size: 32px;
+      @include adaptiveValue("font-size", 32, 18,$containerWidth,393);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: toRem(0.64);
+      @include adaptiveValue("margin-bottom", 37, 12,$containerWidth,393);
+      max-width: toRem(686);
+      @include adaptiveValue("margin-right", 59, 0,$containerWidth,393);
+      padding-inline: toRem(15);
+      @media (max-width:$mobile){
+         letter-spacing: toRem(0.36); 
+      }
+   }
+
+   // .hetrix-font__symbols
+
+   &__symbols {
+      color: #090909;
+      font-family: 'Michroma';
+      @include adaptiveValue("font-size", 32, 18,$containerWidth,393);
+      line-height: normal;
+      letter-spacing: toRem(0.64);
+      padding-inline: toRem(15);
+      @media (max-width:$mobile){
+         letter-spacing: toRem(0.36); 
+      }
+   }
+}

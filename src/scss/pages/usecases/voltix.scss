@@ -1,0 +1,64 @@
+.voltix{
+    .progress-bar__filled{
+        background-image: linear-gradient(to right, #00FFA3,#00FFA3);   
+     }
+     .usecases {
+
+		// .usecases__text-content
+
+		&__text-content {
+            background-color: #fff;
+            color: #000;
+		}
+    }
+    .usecases-text-content {
+        padding-inline: toRem(0);
+        @include adaptiveValue("padding-block", 175, 100);
+        svg{
+            @include adaptiveValue("width", 64, 54);
+        }
+		    // .usecases-text-content__container
+
+		    &__container {
+                max-width: toRem(1185);
+                @include adaptiveValue("gap", 60, 30);
+		    }
+
+		    // .usecases-text-content__text
+
+		    &__text {
+                color: #000;
+                font-family: "Montserrat";
+                @include adaptiveValue("font-size", 31, 16);
+                font-weight: 500;
+                line-height: normal;
+                padding: 0;
+                max-width: 100%;
+		    }
+    }
+
+    .usecases-image{
+        &__container{
+            padding: 0;
+            max-width: toRem(1920);
+        }
+        .usecases-image__pic{
+        }
+        &_1{
+            height: toVW(1120);
+            max-height: toRem(1120);
+        }
+        &_2{
+            height: toVW(870);
+            max-height: toRem(870);
+        }
+        &_3{
+            height: toVW(1142);
+            max-height: toRem(1142);
+        }
+        &_4{
+            height: toVW(1192);
+            max-height: toRem(1192);
+        }
+    }
+}

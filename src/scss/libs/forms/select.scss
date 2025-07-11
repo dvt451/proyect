@@ -1,0 +1,45 @@
+.select {
+   position: relative;
+   color: #000;
+   height: 100%;
+   width: 100%;
+   max-width: toRem(100);
+   z-index: 3;
+
+ .option-list {
+   display: none;
+   position: relative;
+   z-index: 1;
+   border: 1px solid;
+ }
+ .selected {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .selected-icon {
+   transition: all 0.3s;
+   path{
+      color: #000;
+   }
+   width: toRem(12);
+   height: toRem(12);
+ }
+ .selected-icon.active {
+   transform: rotate(-180deg);
+ }
+ .option-open {
+   display: block;
+ }
+ .option-list .option {
+   white-space: nowrap;
+   width: 100%;
+   text-align: left;
+   @media (any-hover: hover){
+      &:hover{
+         background-color: rgb(0, 229, 255);
+      }
+   }
+ }
+}

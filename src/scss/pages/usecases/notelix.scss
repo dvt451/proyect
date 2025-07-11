@@ -1,0 +1,63 @@
+.notelix{
+    .progress-bar__filled{
+        background-image: linear-gradient(to right, #C8E944,#C8E944);
+     }
+     .usecases-image__pic__block{
+        padding: toRem(132) toRem(75);
+        background-color: #fff;
+     }
+    .usecases-image{
+        &_2{
+            height: toVW(913);
+            max-height: toRem(913);
+        }
+        &_3{
+            height: toVW(521);
+            max-height: toRem(521);
+        }
+        &_4{
+            height: toVW(889);
+            max-height: toRem(889);
+        }
+        &_5{
+            height: toVW(912);
+            max-height: toRem(912);
+        }
+        &_6{
+            height: toVW(846);
+            max-height: toRem(846);
+        }
+        &_7{
+            height: toVW(1020);
+            max-height: toRem(1020);
+        }
+        &_8{
+            height: toVW(906);
+            max-height: toRem(906);
+        }
+        &_9{
+            height: toVW(1015);
+            max-height: toRem(1015);
+        }
+        &_10{
+            height: toVW(680);
+            max-height: toRem(680);
+        }
+        &_11{
+            height: toVW(820);
+            max-height: toRem(820);
+        }
+        &_12{
+            height: toVW(926);
+            max-height: toRem(926);
+        }
+        &_13{
+            height: toVW(967);
+            max-height: toRem(967);
+        }
+        &_14{
+            height: toVW(1046);
+            max-height: toRem(1046);
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.main-content {
+   @media (min-width:$tablet){
+      padding-top: toRem(180);
+      
+   }
+   position: relative;
+   &:nth-child(1){
+      @media (max-width:$tablet){
+         display: none;
+      }
+   }
+   &:nth-child(2){
+      @media (min-width:$tablet){
+          display: none; 
+      }
+   }
+ }
+ 
+ .blocks-outer-wrapper {
+   height: 100vh; /* Set height to full viewport height */
+   position: sticky; /* Sticky positioning */
+   top: 0;
+   overflow: hidden; /* Hide overflow */
+ }
+ 
+ .blocks-wrapper {
+   transition: transform 0.7s ease-in-out; /* Add transition for smooth sliding */
+ }
+ 
+ .casestudies__row{
+   // margin: 0 toRem(100);
+   // background-color: var(--colBlack);
+   @media (min-width:$tablet){
+      height: 100vh;
+   }
+ }

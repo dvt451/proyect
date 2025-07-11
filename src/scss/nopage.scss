@@ -1,0 +1,26 @@
+.nopage {
+   background-color: var(--colBlack);
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: toRem(100);
+   padding: toRem(100) 0;
+   // .nopage__content
+
+   &__content {
+      text-align: center;
+   }
+
+   // .nopage__text
+
+   &__text {
+      color: var(--colYellow);
+      font-family: 'Unbounded';
+      @include adaptiveValue("font-size", 70, 24,$containerWidth,393);
+      text-transform: uppercase;
+      padding-bottom: toRem(50);
+   }
+}
